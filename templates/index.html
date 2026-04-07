@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Congress Tracker | Stock Trades</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo">
+      <span class="logo-icon">C</span>
+      <span class="logo-text">Congress<span class="logo-accent">Tracker</span></span>
+    </a>
+    <div class="nav-stats">
+      <span class="nav-stat"><strong>{{ total_trades }}</strong> trades</span>
+      <span class="nav-stat"><strong class="green">{{ total_buys }}</strong> buys</span>
+      <span class="nav-stat"><strong class="red">{{ total_sells }}</strong> sells</span>
+      <span class="nav-stat"><strong>{{ total_members }}</strong> members</span>
+      <span class="nav-badge">LIVE</span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container">
+    <p class="hero-label">STOCK Act Disclosures</p>
+    <h1>Congressional Stock Trading</h1>
+    <p class="hero-sub">Track stock trades by all members of the US Congress. Data from official disclosures, InsiderFinance, Capitol Trades &amp; Quiver Quantitative.</p>
+  </div>
+</header>
+
+<!-- MAIN TABS -->
+<div class="tabs-bar">
+  <div class="container">
+    <div class="tabs-nav">
+      <a href="/?tab=trades" class="tab-btn {{ 'active' if tab == 'trades' }}">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 3h18M3 9h18M3 15h18M3 21h18"/></svg>
+        Trades
+      </a>
+      <a href="/?tab=politicians" class="tab-btn {{ 'active' if tab == 'politicians' }}">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17" cy="7" r="3"/><path d="M21 21v-1a3 3 0 0 0-3-3h-1"/></svg>
+        Politicians
+      </a>
+      <a href="/?tab=senate" class="tab-btn {{ 'active' if tab == 'senate' }}">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-4h6v4"/></svg>
+        Senate Map
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- TAB: TRADES -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div id="tab-trades" class="tab-content {{ '' if tab == 'trades' else 'hidden' }}">
+
+  <!-- Trades Filter Bar -->
+  <section class="filters-bar trades-filter-bar">
+    <div class="container">
+      <div class="filter-row">
+        <div class="filter-group">
+          <label>Ticker</label>
+          <input type="text" id="f-ticker" placeholder="e.g. NVDA" class="search-input" style="width:110px"/>
+        </div>
+        <div class="filter-group">
+          <label>Politician</label>
+          <input type="text" id="f-member" placeholder="Search name..." class="search-input" style="width:160px"/>
+        </div>
+        <div class="filter-group">
+          <label>Chamber</label>
+          <div class="btn-group" id="f-chamber">
+            <button class="btn-filter active" data-val="all">ALL</button>
+            <button class="btn-filter" data-val="senate">SENATE</button>
+            <button class="btn-filter" data-val="house">HOUSE</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <label>Party</label>
+          <div class="btn-group" id="f-party">
+            <button class="btn-filter active" data-val="all">ALL</button>
+            <button class="btn-filter dem" data-val="D">DEM</button>
+            <button class="btn-filter rep" data-val="R">REP</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <label>Amount</label>
+          <div class="btn-group" id="f-amount">
+            <button class="btn-filter active" data-val="all">ALL</button>
+            <button class="btn-filter" data-val="1-100k">$1-$100K</button>
+            <button class="btn-filter" data-val="100k-1m">$100K-$1M</button>
+            <button class="btn-filter" data-val="1m+">$1M+</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <label>Type</label>
+          <div class="btn-group" id="f-type">
+            <button class="btn-filter active" data-val="all">ALL</button>
+            <button class="btn-filter green-filter" data-val="BUY">BUY</button>
+            <button class="btn-filter red-filter" data-val="SELL">SELL</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trades Table -->
+  <main class="container" style="padding-top:24px; padding-bottom:60px">
+    <div class="trades-section">
+      <div class="trades-section-header">
+        <h2>All Trades <span class="trades-count" id="trades-total">Loading...</span></h2>
+        <div class="trades-pagination" id="trades-pagination"></div>
+      </div>
+      <div class="trades-table-wrap" id="trades-table-wrap">
+        <table class="trades-table" id="trades-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Ticker</th>
+              <th>Asset</th>
+              <th>Politician</th>
+              <th>Chamber</th>
+              <th>Party</th>
+              <th>Type</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody id="trades-tbody">
+            <tr><td colspan="8" class="loading-row">Loading trades...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- TAB: POLITICIANS -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div id="tab-politicians" class="tab-content {{ '' if tab == 'politicians' else 'hidden' }}">
+
+  <!-- Top Performers -->
+  {% if top_performers %}
+  <section class="top-section">
+    <div class="container">
+      <h2 class="section-title">Top Traders</h2>
+      <div class="top-grid">
+        {% for m in top_performers %}
+        <a href="/politician/{{ m.slug }}" class="top-card {{ 'high-alpha' if m.high_alpha }}">
+          <div class="top-rank">#{{ loop.index }}</div>
+          <div class="top-photo-wrap">
+            {% if m.photo %}
+            <img src="{{ m.photo }}" alt="{{ m.name }}" class="top-photo"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+            <div class="photo-fallback top-fb" style="display:none">{{ m.name[0] }}</div>
+            {% else %}
+            <div class="photo-fallback top-fb">{{ m.name[0] }}</div>
+            {% endif %}
+            {% if m.high_alpha %}<span class="alpha-badge">★</span>{% endif %}
+          </div>
+          <div class="top-info">
+            <h3>{{ m.name }}</h3>
+            <span class="party-tag {{ 'dem' if m.party == 'D' else 'rep' if m.party == 'R' }}">{{ m.party_label }}</span>
+          </div>
+          <div class="top-numbers">
+            <div><span class="big-num">{{ m.total_trades }}</span><span class="num-label">trades</span></div>
+            <div><span class="big-num green">{{ m.buys }}</span><span class="num-label">buys</span></div>
+            <div><span class="big-num red">{{ m.sells }}</span><span class="num-label">sells</span></div>
+          </div>
+          <div class="top-tickers">
+            {% for ticker, count in m.top_tickers.items() %}
+            <span class="ticker-pill sm">{{ ticker }}</span>
+            {% endfor %}
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Politicians Filters -->
+  <section class="filters-bar" id="all-members">
+    <div class="container filters-inner">
+      <div class="filter-row">
+        <div class="filter-group">
+          <label>Search</label>
+          <form method="get" action="/" style="display:inline">
+            <input type="hidden" name="tab" value="politicians"/>
+            <input type="hidden" name="days" value="{{ days }}"/>
+            <input type="hidden" name="sort" value="{{ sort }}"/>
+            <input type="hidden" name="party" value="{{ party }}"/>
+            <input type="hidden" name="chamber" value="{{ chamber }}"/>
+            <input type="text" name="q" value="{{ search }}" placeholder="Name or ticker..." class="search-input"/>
+          </form>
+        </div>
+        <div class="filter-group">
+          <label>Period</label>
+          <div class="btn-group">
+            <a href="?tab=politicians&days=90&sort={{ sort }}&party={{ party }}&chamber={{ chamber }}&q={{ search }}" class="btn-filter {{ 'active' if days==90 }}">90d</a>
+            <a href="?tab=politicians&days=365&sort={{ sort }}&party={{ party }}&chamber={{ chamber }}&q={{ search }}" class="btn-filter {{ 'active' if days==365 }}">1yr</a>
+            <a href="?tab=politicians&days=9999&sort={{ sort }}&party={{ party }}&chamber={{ chamber }}&q={{ search }}" class="btn-filter {{ 'active' if days==9999 }}">All</a>
+          </div>
+        </div>
+        <div class="filter-group">
+          <label>Party</label>
+          <div class="btn-group">
+            <a href="?tab=politicians&days={{ days }}&sort={{ sort }}&party=all&chamber={{ chamber }}&q={{ search }}" class="btn-filter {{ 'active' if party=='all' }}">ALL</a>
+            <a href="?tab=politicians&days={{ days }}&sort={{ sort }}&party=D&chamber={{ chamber }}&q={{ search }}" class="btn-filter dem {{ 'active' if party=='D' }}">DEM</a>
+            <a href="?tab=politicians&days={{ days }}&sort={{ sort }}&party=R&chamber={{ chamber }}&q={{ search }}" class="btn-filter rep {{ 'active' if party=='R' }}">REP</a>
+          </div>
+        </div>
+        <div class="filter-group">
+          <label>Chamber</label>
+          <div class="btn-group">
+            <a href="?tab=politicians&days={{ days }}&sort={{ sort }}&party={{ party }}&chamber=all&q={{ search }}" class="btn-filter {{ 'active' if chamber=='all' }}">ALL</a>
+            <a href="?tab=politicians&days={{ days }}&sort={{ sort }}&party={{ party }}&chamber=senate&q={{ search }}" class="btn-filter {{ 'active' if chamber=='senate' }}">SENATE</a>
+            <a href="?tab=politicians&days={{ days }}&sort={{ sort }}&party={{ party }}&chamber=house&q={{ search }}" class="btn-filter {{ 'active' if chamber=='house' }}">HOUSE</a>
+          </div>
+        </div>
+        <div class="filter-group">
+          <label>Win Rate</label>
+          <div class="btn-group">
+            <a href="?tab=politicians&days={{ days }}&sort={{ sort }}&party={{ party }}&chamber={{ chamber }}&winrate=all&q={{ search }}" class="btn-filter {{ 'active' if winrate=='all' }}">All</a>
+            <a href="?tab=politicians&days={{ days }}&sort={{ sort }}&party={{ party }}&chamber={{ chamber }}&winrate=70%2B&q={{ search }}" class="btn-filter green-filter {{ 'active' if winrate=='70+' }}">70%+</a>
+            <a href="?tab=politicians&days={{ days }}&sort={{ sort }}&party={{ party }}&chamber={{ chamber }}&winrate=50-70&q={{ search }}" class="btn-filter {{ 'active' if winrate=='50-70' }}">50-70%</a>
+            <a href="?tab=politicians&days={{ days }}&sort={{ sort }}&party={{ party }}&chamber={{ chamber }}&winrate=50-&q={{ search }}" class="btn-filter red-filter {{ 'active' if winrate=='50-' }}">&lt;50%</a>
+          </div>
+        </div>
+        <div class="filter-group">
+          <label>Sort</label>
+          <div class="btn-group">
+            <a href="?tab=politicians&days={{ days }}&sort=trades&party={{ party }}&chamber={{ chamber }}&winrate={{ winrate }}&q={{ search }}" class="btn-filter {{ 'active' if sort=='trades' }}">Trades</a>
+            <a href="?tab=politicians&days={{ days }}&sort=recent&party={{ party }}&chamber={{ chamber }}&winrate={{ winrate }}&q={{ search }}" class="btn-filter {{ 'active' if sort=='recent' }}">Recent</a>
+            <a href="?tab=politicians&days={{ days }}&sort=winrate&party={{ party }}&chamber={{ chamber }}&winrate={{ winrate }}&q={{ search }}" class="btn-filter {{ 'active' if sort=='winrate' }}">Win Rate</a>
+            <a href="?tab=politicians&days={{ days }}&sort=buys&party={{ party }}&chamber={{ chamber }}&winrate={{ winrate }}&q={{ search }}" class="btn-filter {{ 'active' if sort=='buys' }}">Buys</a>
+            <a href="?tab=politicians&days={{ days }}&sort=volume&party={{ party }}&chamber={{ chamber }}&winrate={{ winrate }}&q={{ search }}" class="btn-filter {{ 'active' if sort=='volume' }}">Volume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Members Grid -->
+  <main class="container">
+    <p class="results-count">{{ members|length }} members found</p>
+    <div class="members-grid">
+      {% for m in members %}
+      <a href="/politician/{{ m.slug }}" class="member-card {{ 'high-alpha' if m.high_alpha }}">
+        <div class="card-top">
+          <div class="photo-wrap">
+            {% if m.photo %}
+            <img src="{{ m.photo }}" alt="{{ m.name }}" class="photo"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+            <div class="photo-fallback" style="display:none">{{ m.name[0] }}</div>
+            {% else %}
+            <div class="photo-fallback">{{ m.name[0] }}</div>
+            {% endif %}
+            {% if m.high_alpha %}<span class="alpha-badge" title="High alpha trader">★</span>{% endif %}
+          </div>
+          <div class="card-info">
+            <h3 class="member-name">{{ m.name }}</h3>
+            <div class="member-meta">
+              <span class="party-tag {{ 'dem' if m.party == 'D' else 'rep' if m.party == 'R' else '' }}">{{ m.party_label }}</span>
+              <span class="chamber-tag">{{ m.chamber }}</span>
+              {% if m.state %}<span class="chamber-tag">{{ m.state }}</span>{% endif %}
+            </div>
+          </div>
+        </div>
+
+        <div class="card-stats">
+          <div class="stat">
+            <span class="stat-val">{{ m.total_trades }}</span>
+            <span class="stat-label">Trades</span>
+          </div>
+          <div class="stat">
+            <span class="stat-val green">{{ m.buys }}</span>
+            <span class="stat-label">Buys</span>
+          </div>
+          <div class="stat">
+            <span class="stat-val red">{{ m.sells }}</span>
+            <span class="stat-label">Sells</span>
+          </div>
+          <div class="stat">
+            {% if m.win_rate is not none %}
+            <span class="stat-val {{ 'green' if m.win_rate >= 60 else 'red' if m.win_rate < 45 else 'yellow' }}">{{ m.win_rate }}%</span>
+            <span class="stat-label">Win Rate</span>
+            {% else %}
+            <span class="stat-val muted">—</span>
+            <span class="stat-label">Win Rate</span>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="card-tickers">
+          {% for ticker, count in m.top_tickers.items() %}
+          <span class="ticker-pill">{{ ticker }} <small>{{ count }}</small></span>
+          {% endfor %}
+        </div>
+
+        <div class="card-footer">
+          <span class="last-trade">{{ m.last_trade or 'No trades' }}</span>
+          {% if m.avg_delay %}
+          <span class="delay {{ 'late' if m.avg_delay >= 35 }}">{{ m.avg_delay }}d delay</span>
+          {% endif %}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+    {% if not members %}
+    <div class="empty">No members found. Adjust your filters.</div>
+    {% endif %}
+  </main>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- TAB: SENATE MAP -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div id="tab-senate" class="tab-content {{ '' if tab == 'senate' else 'hidden' }}">
+  <main class="container" style="padding: 40px 0 60px">
+    <div class="senate-map-header">
+      <h2 class="section-title">Senate Chamber — 100 Seats</h2>
+      <div class="senate-legend">
+        <span class="legend-dot dem"></span><span>Democrat</span>
+        <span class="legend-dot rep"></span><span>Republican</span>
+        <span class="legend-dot ind"></span><span>Independent</span>
+        <span class="legend-dot glow-legend"></span><span>Has recent trades</span>
+      </div>
+    </div>
+
+    <div class="senate-map-wrap">
+      <svg id="senate-svg" viewBox="0 0 800 460" xmlns="http://www.w3.org/2000/svg">
+        <!-- Background -->
+        <rect width="800" height="460" fill="#0a0e1a" rx="12"/>
+
+        <!-- Podium / desk area -->
+        <!-- Presiding officer desk at bottom center -->
+        <ellipse cx="400" cy="400" rx="50" ry="14" fill="#1f1f23" stroke="#27272a" stroke-width="1"/>
+        <rect x="370" y="420" width="60" height="25" rx="4" fill="#1a2030" stroke="#1e2638" stroke-width="1"/>
+
+        <!-- Label -->
+        <text x="400" y="395" text-anchor="middle" dominant-baseline="middle" font-family="Inter,sans-serif" font-size="9" font-weight="600" letter-spacing="1" fill="#71717a">PRESIDING OFFICER</text>
+        <!-- Aisle labels -->
+        <text x="160" y="440" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#818cf8" opacity="0.6">DEMOCRATS</text>
+        <text x="640" y="440" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#f87171" opacity="0.6">REPUBLICANS</text>
+        <!-- Center aisle line -->
+        <line x1="400" y1="380" x2="400" y2="450" stroke="#27272a" stroke-width="1" stroke-dasharray="4,4"/>
+
+        <!-- Senate seats — generated by JS below -->
+        <g id="senate-seats"></g>
+
+        <!-- Tooltip -->
+        <g id="senate-tooltip" style="display:none">
+          <rect id="tt-bg" x="0" y="0" width="180" height="54" rx="7" fill="#141926" stroke="#1e2638" stroke-width="1"/>
+          <text id="tt-name" x="10" y="20" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#e2e8f0"></text>
+          <text id="tt-state" x="10" y="36" font-family="Inter,sans-serif" font-size="11" fill="#94a3b8"></text>
+          <text id="tt-trades" x="10" y="50" font-family="Inter,sans-serif" font-size="11" fill="#64748b"></text>
+        </g>
+      </svg>
+
+      <!-- Tooltip outside SVG for HTML rendering -->
+      <div id="senate-html-tooltip" class="senate-tooltip-popup" style="display:none"></div>
+    </div>
+
+    <!-- Stats bar -->
+    <div class="senate-stats-bar">
+      <div class="senate-stat">
+        <span class="senate-stat-val" id="s-dem-count">–</span>
+        <span class="senate-stat-label">Democrats</span>
+      </div>
+      <div class="senate-stat">
+        <span class="senate-stat-val red" id="s-rep-count">–</span>
+        <span class="senate-stat-label">Republicans</span>
+      </div>
+      <div class="senate-stat">
+        <span class="senate-stat-val yellow" id="s-ind-count">–</span>
+        <span class="senate-stat-label">Independent</span>
+      </div>
+      <div class="senate-stat">
+        <span class="senate-stat-val green" id="s-traded-count">–</span>
+        <span class="senate-stat-label">With Trades</span>
+      </div>
+    </div>
+  </main>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p>Data: Official House Clerk PTR disclosures | InsiderFinance | Capitol Trades | Quiver Quantitative</p>
+    <p>{{ now }} | {{ total_trades }} trades from {{ total_members }} members</p>
+  </div>
+</footer>
+
+<!-- Senate map data from server -->
+<script>
+const SENATE_MEMBERS = {{ senate_members | tojson }};
+</script>
+
+<script>
+// ─── SENATE MAP ───────────────────────────────────────────────
+(function() {
+  const members = SENATE_MEMBERS;
+  const svg = document.getElementById('senate-seats');
+  const tooltip = document.getElementById('senate-html-tooltip');
+
+  // Sort: Democrats left, Independents center, Republicans right (traditional)
+  const dems = members.filter(m => m.party_code === 'D').sort((a,b) => a.state.localeCompare(b.state));
+  const inds = members.filter(m => m.party_code === 'I');
+  const reps = members.filter(m => m.party_code === 'R').sort((a,b) => a.state.localeCompare(b.state));
+
+  // Real US Senate: semicircle opening toward presiding officer (bottom)
+  // Seats curve upward from center. 5 concentric rows.
+  const cx = 400, cy = 380;
+  const rows = [
+    { r: 120, count: 14 },
+    { r: 160, count: 18 },
+    { r: 200, count: 22 },
+    { r: 240, count: 24 },
+    { r: 280, count: 22 },
+  ];
+
+  // Place Democrats on the left arc, Republicans on the right (viewed from presiding officer)
+  const allMembers = [...dems, ...inds, ...reps];
+  let seatIdx = 0;
+
+  const colorMap = { D: '#818cf8', R: '#f87171', I: '#fbbf24' };
+  const glowColor = '#34d399';
+
+  let demCount = 0, repCount = 0, indCount = 0, tradedCount = 0;
+
+  rows.forEach(row => {
+    // Arc from left (PI) to right (0), curving UPWARD (negative y)
+    const startAngle = Math.PI;
+    const endAngle = 0;
+    const padding = 0.15; // padding on each side
+    const arcStart = startAngle - padding;
+    const arcEnd = endAngle + padding;
+    const step = (arcStart - arcEnd) / (row.count - 1);
+
+    for (let i = 0; i < row.count; i++) {
+      if (seatIdx >= allMembers.length) break;
+      const member = allMembers[seatIdx++];
+      const angle = arcStart - i * step;
+      const x = cx + row.r * Math.cos(angle);
+      const y = cy - row.r * Math.sin(angle); // MINUS for upward arc
+
+      const hasTrades = member.trade_count > 0;
+      const color = colorMap[member.party_code] || '#64748b';
+      const r = hasTrades ? 8 : 6;
+
+      // Count stats
+      if (member.party_code === 'D') demCount++;
+      else if (member.party_code === 'R') repCount++;
+      else indCount++;
+      if (hasTrades) tradedCount++;
+
+      // Create circle
+      const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      circle.setAttribute('cx', x.toFixed(1));
+      circle.setAttribute('cy', y.toFixed(1));
+      circle.setAttribute('r', r);
+      circle.setAttribute('fill', color);
+      circle.setAttribute('opacity', hasTrades ? '1' : '0.55');
+      circle.setAttribute('stroke', hasTrades ? glowColor : 'transparent');
+      circle.setAttribute('stroke-width', hasTrades ? '2' : '0');
+      circle.style.cursor = 'pointer';
+      circle.style.transition = 'r 0.15s, opacity 0.15s';
+
+      // Glow filter for traded
+      if (hasTrades) {
+        circle.setAttribute('filter', 'url(#glow)');
+      }
+
+      // Tooltip
+      circle.addEventListener('mouseenter', (e) => {
+        const partyLabel = member.party_code === 'D' ? 'Democrat' : member.party_code === 'R' ? 'Republican' : 'Independent';
+        tooltip.innerHTML = `
+          <div class="st-name">${member.name}</div>
+          <div class="st-meta">${partyLabel} · ${member.state}</div>
+          ${hasTrades ? `<div class="st-trades green">${member.trade_count} trades disclosed</div>` : '<div class="st-trades muted">No trades disclosed</div>'}
+        `;
+        tooltip.style.display = 'block';
+        positionTooltip(e);
+      });
+      circle.addEventListener('mousemove', positionTooltip);
+      circle.addEventListener('mouseleave', () => {
+        tooltip.style.display = 'none';
+      });
+      circle.addEventListener('click', () => {
+        if (member.slug) window.location.href = '/politician/' + member.slug;
+      });
+
+      svg.appendChild(circle);
+    }
+  });
+
+  // Update stats
+  document.getElementById('s-dem-count').textContent = demCount;
+  document.getElementById('s-rep-count').textContent = repCount;
+  document.getElementById('s-ind-count').textContent = indCount;
+  document.getElementById('s-traded-count').textContent = tradedCount;
+
+  function positionTooltip(e) {
+    const wrap = document.querySelector('.senate-map-wrap');
+    const rect = wrap.getBoundingClientRect();
+    let x = e.clientX - rect.left + 14;
+    let y = e.clientY - rect.top - 10;
+    if (x + 200 > rect.width) x = e.clientX - rect.left - 190;
+    tooltip.style.left = x + 'px';
+    tooltip.style.top = y + 'px';
+  }
+
+  // Add SVG glow filter
+  const svgEl = document.getElementById('senate-svg');
+  const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+  defs.innerHTML = `
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  `;
+  svgEl.prepend(defs);
+})();
+
+// ─── TRADES TABLE ─────────────────────────────────────────────
+(function() {
+  let filters = {
+    ticker: '', member: '', chamber: 'all', party: 'all',
+    amount: 'all', type: 'all', page: 1
+  };
+
+  const tbody = document.getElementById('trades-tbody');
+  const totalEl = document.getElementById('trades-total');
+  const paginationEl = document.getElementById('trades-pagination');
+
+  function fetchTrades() {
+    const params = new URLSearchParams({
+      days: 9999,
+      ticker: filters.ticker,
+      member: filters.member,
+      chamber: filters.chamber,
+      party: filters.party,
+      amount: filters.amount,
+      type: filters.type,
+      page: filters.page,
+    });
+    tbody.innerHTML = '<tr><td colspan="8" class="loading-row">Loading...</td></tr>';
+    fetch('/api/trades-filter?' + params.toString())
+      .then(r => r.json())
+      .then(data => {
+        renderTrades(data.trades);
+        totalEl.textContent = data.total.toLocaleString() + ' trades';
+        renderPagination(data.page, data.pages, data.total);
+      })
+      .catch(() => {
+        tbody.innerHTML = '<tr><td colspan="8" class="loading-row red">Failed to load trades.</td></tr>';
+      });
+  }
+
+  function renderTrades(trades) {
+    if (!trades.length) {
+      tbody.innerHTML = '<tr><td colspan="8" class="loading-row muted">No trades match your filters.</td></tr>';
+      return;
+    }
+    tbody.innerHTML = trades.map(t => {
+      const partyClass = t.party === 'D' ? 'dem' : t.party === 'R' ? 'rep' : '';
+      const partyLabel = t.party === 'D' ? 'D' : t.party === 'R' ? 'R' : t.party || '?';
+      const typeClass = t.type === 'BUY' ? 'buy' : 'sell';
+      const chamberShort = t.chamber ? t.chamber.charAt(0).toUpperCase() + t.chamber.slice(1, 5) : '';
+      const avatar = t.photo
+        ? `<img src="${escHtml(t.photo)}" class="trade-avatar" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" alt=""/><div class="trade-avatar-fb" style="display:none">${escHtml(t.member.charAt(0))}</div>`
+        : `<div class="trade-avatar-fb">${escHtml(t.member.charAt(0))}</div>`;
+      const assetShort = t.asset_name ? (t.asset_name.length > 30 ? t.asset_name.slice(0, 28) + '…' : t.asset_name) : '—';
+      return `<tr onclick="window.location='/politician/${escHtml(t.slug)}'" style="cursor:pointer">
+        <td class="muted">${escHtml(t.date)}</td>
+        <td><strong class="ticker">${escHtml(t.ticker)}</strong></td>
+        <td class="asset-cell muted" title="${escHtml(t.asset_name)}">${escHtml(assetShort)}</td>
+        <td>
+          <div class="trade-member-cell">
+            ${avatar}
+            <a href="/politician/${escHtml(t.slug)}" class="trade-member-name" onclick="event.stopPropagation()">${escHtml(t.member)}</a>
+          </div>
+        </td>
+        <td class="muted">${escHtml(chamberShort)}</td>
+        <td><span class="party-tag ${partyClass}">${partyLabel}</span></td>
+        <td><span class="type-badge ${typeClass}">${escHtml(t.type)}</span></td>
+        <td class="muted">${escHtml(t.amount || '—')}</td>
+      </tr>`;
+    }).join('');
+  }
+
+  function renderPagination(page, pages, total) {
+    if (pages <= 1) { paginationEl.innerHTML = ''; return; }
+    let html = '';
+    if (page > 1) html += `<button class="page-btn" onclick="goPage(${page-1})">&#8592;</button>`;
+    const start = Math.max(1, page - 2);
+    const end   = Math.min(pages, page + 2);
+    if (start > 1) html += `<button class="page-btn" onclick="goPage(1)">1</button><span class="page-ellipsis">…</span>`;
+    for (let p = start; p <= end; p++) {
+      html += `<button class="page-btn ${p === page ? 'active' : ''}" onclick="goPage(${p})">${p}</button>`;
+    }
+    if (end < pages) html += `<span class="page-ellipsis">…</span><button class="page-btn" onclick="goPage(${pages})">${pages}</button>`;
+    if (page < pages) html += `<button class="page-btn" onclick="goPage(${page+1})">&#8594;</button>`;
+    paginationEl.innerHTML = html;
+  }
+
+  window.goPage = function(p) {
+    filters.page = p;
+    fetchTrades();
+    document.querySelector('.trades-section').scrollIntoView({behavior:'smooth', block:'start'});
+  };
+
+  function escHtml(str) {
+    if (!str) return '';
+    return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  // Filter group toggles
+  ['f-chamber','f-party','f-amount','f-type'].forEach(id => {
+    const group = document.getElementById(id);
+    if (!group) return;
+    group.querySelectorAll('.btn-filter').forEach(btn => {
+      btn.addEventListener('click', () => {
+        group.querySelectorAll('.btn-filter').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const key = id.replace('f-','');
+        filters[key] = btn.dataset.val;
+        filters.page = 1;
+        fetchTrades();
+      });
+    });
+  });
+
+  // Text inputs (debounced)
+  let debounceT;
+  ['f-ticker','f-member'].forEach(id => {
+    const inp = document.getElementById(id);
+    if (!inp) return;
+    inp.addEventListener('input', () => {
+      clearTimeout(debounceT);
+      debounceT = setTimeout(() => {
+        filters[id.replace('f-','')] = inp.value.trim();
+        filters.page = 1;
+        fetchTrades();
+      }, 300);
+    });
+  });
+
+  // Initial load only if trades tab is active
+  if (document.getElementById('tab-trades') && !document.getElementById('tab-trades').classList.contains('hidden')) {
+    fetchTrades();
+  }
+
+  // Also load when tab becomes visible via nav click
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      if (btn.href && btn.href.includes('tab=trades')) {
+        // Will navigate, but for SPA feel, also load if already on page
+      }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

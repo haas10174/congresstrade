@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.pyo
+data/
+data_scraped/
+sample_ptr.pdf
+test_parse.py
+.env
