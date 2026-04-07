@@ -1,0 +1,434 @@
+{
+  "Scott Scott Franklin": {
+    "wins": 9,
+    "losses": 0,
+    "total": 9,
+    "win_rate": 100.0
+  },
+  "Tina Smith": {
+    "wins": 4,
+    "losses": 0,
+    "total": 4,
+    "win_rate": 100.0
+  },
+  "Neal Dunn": {
+    "wins": 19,
+    "losses": 2,
+    "total": 21,
+    "win_rate": 90.5
+  },
+  "Rich McCormick": {
+    "wins": 46,
+    "losses": 9,
+    "total": 55,
+    "win_rate": 83.6
+  },
+  "Deborah Dingell": {
+    "wins": 5,
+    "losses": 1,
+    "total": 6,
+    "win_rate": 83.3
+  },
+  "Lindsey Graham": {
+    "wins": 5,
+    "losses": 1,
+    "total": 6,
+    "win_rate": 83.3
+  },
+  "Sheri Biggs": {
+    "wins": 5,
+    "losses": 1,
+    "total": 6,
+    "win_rate": 83.3
+  },
+  "Katie Britt": {
+    "wins": 14,
+    "losses": 3,
+    "total": 17,
+    "win_rate": 82.4
+  },
+  "Dwight Evans": {
+    "wins": 9,
+    "losses": 2,
+    "total": 11,
+    "win_rate": 81.8
+  },
+  "David J. Taylor": {
+    "wins": 15,
+    "losses": 4,
+    "total": 19,
+    "win_rate": 78.9
+  },
+  "Richard Dean Dr McCormick": {
+    "wins": 11,
+    "losses": 3,
+    "total": 14,
+    "win_rate": 78.6
+  },
+  "Jared Moskowitz": {
+    "wins": 20,
+    "losses": 6,
+    "total": 26,
+    "win_rate": 76.9
+  },
+  "Rob Bresnahan": {
+    "wins": 32,
+    "losses": 10,
+    "total": 42,
+    "win_rate": 76.2
+  },
+  "Susan Collins": {
+    "wins": 3,
+    "losses": 1,
+    "total": 4,
+    "win_rate": 75.0
+  },
+  "John Curtis": {
+    "wins": 9,
+    "losses": 4,
+    "total": 13,
+    "win_rate": 69.2
+  },
+  "John Fetterman": {
+    "wins": 30,
+    "losses": 14,
+    "total": 44,
+    "win_rate": 68.2
+  },
+  "James Comer": {
+    "wins": 16,
+    "losses": 8,
+    "total": 24,
+    "win_rate": 66.7
+  },
+  "Kevin Hern": {
+    "wins": 2,
+    "losses": 1,
+    "total": 3,
+    "win_rate": 66.7
+  },
+  "Richard W. Allen": {
+    "wins": 6,
+    "losses": 3,
+    "total": 9,
+    "win_rate": 66.7
+  },
+  "Rick Larsen": {
+    "wins": 4,
+    "losses": 2,
+    "total": 6,
+    "win_rate": 66.7
+  },
+  "Stephen Cohen": {
+    "wins": 2,
+    "losses": 1,
+    "total": 3,
+    "win_rate": 66.7
+  },
+  "John Boozman": {
+    "wins": 140,
+    "losses": 72,
+    "total": 212,
+    "win_rate": 66.0
+  },
+  "Robert Bresnahan": {
+    "wins": 151,
+    "losses": 81,
+    "total": 232,
+    "win_rate": 65.1
+  },
+  "Richard Allen": {
+    "wins": 11,
+    "losses": 6,
+    "total": 17,
+    "win_rate": 64.7
+  },
+  "Jefferson Shreve": {
+    "wins": 33,
+    "losses": 19,
+    "total": 52,
+    "win_rate": 63.5
+  },
+  "Earl Blumenauer": {
+    "wins": 20,
+    "losses": 12,
+    "total": 32,
+    "win_rate": 62.5
+  },
+  "Shelley Moore Capito": {
+    "wins": 21,
+    "losses": 13,
+    "total": 34,
+    "win_rate": 61.8
+  },
+  "Valerie Hoyle": {
+    "wins": 25,
+    "losses": 16,
+    "total": 41,
+    "win_rate": 61.0
+  },
+  "Ashley Moody": {
+    "wins": 6,
+    "losses": 4,
+    "total": 10,
+    "win_rate": 60.0
+  },
+  "Gary Peters": {
+    "wins": 3,
+    "losses": 2,
+    "total": 5,
+    "win_rate": 60.0
+  },
+  "Ritchie John Torres": {
+    "wins": 12,
+    "losses": 8,
+    "total": 20,
+    "win_rate": 60.0
+  },
+  "Marjorie Taylor Greene": {
+    "wins": 62,
+    "losses": 42,
+    "total": 104,
+    "win_rate": 59.6
+  },
+  "Dave McCormick": {
+    "wins": 20,
+    "losses": 14,
+    "total": 34,
+    "win_rate": 58.8
+  },
+  "Lois Frankel": {
+    "wins": 24,
+    "losses": 17,
+    "total": 41,
+    "win_rate": 58.5
+  },
+  "Cleo Fields": {
+    "wins": 82,
+    "losses": 60,
+    "total": 142,
+    "win_rate": 57.7
+  },
+  "Lisa McClain": {
+    "wins": 128,
+    "losses": 95,
+    "total": 223,
+    "win_rate": 57.4
+  },
+  "Thomas H. Kean": {
+    "wins": 8,
+    "losses": 6,
+    "total": 14,
+    "win_rate": 57.1
+  },
+  "Tim Moore": {
+    "wins": 20,
+    "losses": 15,
+    "total": 35,
+    "win_rate": 57.1
+  },
+  "Markwayne Mullin": {
+    "wins": 134,
+    "losses": 104,
+    "total": 238,
+    "win_rate": 56.3
+  },
+  "Angus King": {
+    "wins": 14,
+    "losses": 11,
+    "total": 25,
+    "win_rate": 56.0
+  },
+  "Michael Burgess": {
+    "wins": 10,
+    "losses": 8,
+    "total": 18,
+    "win_rate": 55.6
+  },
+  "Charles Fleischmann": {
+    "wins": 43,
+    "losses": 35,
+    "total": 78,
+    "win_rate": 55.1
+  },
+  "Gilbert Cisneros": {
+    "wins": 317,
+    "losses": 258,
+    "total": 575,
+    "win_rate": 55.1
+  },
+  "Lloyd Doggett": {
+    "wins": 32,
+    "losses": 28,
+    "total": 60,
+    "win_rate": 53.3
+  },
+  "Michael McCaul": {
+    "wins": 44,
+    "losses": 39,
+    "total": 83,
+    "win_rate": 53.0
+  },
+  "Virginia Foxx": {
+    "wins": 54,
+    "losses": 49,
+    "total": 103,
+    "win_rate": 52.4
+  },
+  "Tommy Tuberville": {
+    "wins": 63,
+    "losses": 58,
+    "total": 121,
+    "win_rate": 52.1
+  },
+  "Mitch McConnell": {
+    "wins": 6,
+    "losses": 6,
+    "total": 12,
+    "win_rate": 50.0
+  },
+  "Thomas R. Carper": {
+    "wins": 23,
+    "losses": 23,
+    "total": 46,
+    "win_rate": 50.0
+  },
+  "Val Hoyle": {
+    "wins": 2,
+    "losses": 2,
+    "total": 4,
+    "win_rate": 50.0
+  },
+  "Thomas Carper": {
+    "wins": 23,
+    "losses": 24,
+    "total": 47,
+    "win_rate": 48.9
+  },
+  "Julie Johnson": {
+    "wins": 14,
+    "losses": 15,
+    "total": 29,
+    "win_rate": 48.3
+  },
+  "David Taylor": {
+    "wins": 25,
+    "losses": 27,
+    "total": 52,
+    "win_rate": 48.1
+  },
+  "Dan Newhouse": {
+    "wins": 11,
+    "losses": 12,
+    "total": 23,
+    "win_rate": 47.8
+  },
+  "Charles J. \"Chuck\" Fleischmann": {
+    "wins": 6,
+    "losses": 7,
+    "total": 13,
+    "win_rate": 46.2
+  },
+  "Ro Khanna": {
+    "wins": 58,
+    "losses": 69,
+    "total": 127,
+    "win_rate": 45.7
+  },
+  "Julia Letlow": {
+    "wins": 26,
+    "losses": 31,
+    "total": 57,
+    "win_rate": 45.6
+  },
+  "John W. Hickenlooper": {
+    "wins": 4,
+    "losses": 5,
+    "total": 9,
+    "win_rate": 44.4
+  },
+  "Sheldon Whitehouse": {
+    "wins": 8,
+    "losses": 10,
+    "total": 18,
+    "win_rate": 44.4
+  },
+  "Jonathan Jackson": {
+    "wins": 15,
+    "losses": 19,
+    "total": 34,
+    "win_rate": 44.1
+  },
+  "Tony Wied": {
+    "wins": 6,
+    "losses": 8,
+    "total": 14,
+    "win_rate": 42.9
+  },
+  "Josh Gottheimer": {
+    "wins": 28,
+    "losses": 38,
+    "total": 66,
+    "win_rate": 42.4
+  },
+  "Nancy Pelosi": {
+    "wins": 5,
+    "losses": 7,
+    "total": 12,
+    "win_rate": 41.7
+  },
+  "April Delaney": {
+    "wins": 14,
+    "losses": 23,
+    "total": 37,
+    "win_rate": 37.8
+  },
+  "Byron Donalds": {
+    "wins": 19,
+    "losses": 36,
+    "total": 55,
+    "win_rate": 34.5
+  },
+  "James Banks": {
+    "wins": 1,
+    "losses": 2,
+    "total": 3,
+    "win_rate": 33.3
+  },
+  "John McGuire": {
+    "wins": 1,
+    "losses": 2,
+    "total": 3,
+    "win_rate": 33.3
+  },
+  "Bruce Westerman": {
+    "wins": 10,
+    "losses": 22,
+    "total": 32,
+    "win_rate": 31.2
+  },
+  "William R. Keating": {
+    "wins": 1,
+    "losses": 3,
+    "total": 4,
+    "win_rate": 25.0
+  },
+  "John Delaney": {
+    "wins": 4,
+    "losses": 13,
+    "total": 17,
+    "win_rate": 23.5
+  },
+  "April McClain Delaney": {
+    "wins": 2,
+    "losses": 7,
+    "total": 9,
+    "win_rate": 22.2
+  },
+  "Dan Sullivan": {
+    "wins": 0,
+    "losses": 5,
+    "total": 5,
+    "win_rate": 0.0
+  }
+}

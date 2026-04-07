@@ -1,8 +1,8 @@
 __pycache__/
 *.pyc
 *.pyo
-data/
 data_scraped/
 sample_ptr.pdf
+data/pelosi_full.json
 test_parse.py
 .env
