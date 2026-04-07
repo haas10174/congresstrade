@@ -1,0 +1,2221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virginia Foxx | Congress Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo">
+      <span class="logo-icon">C</span>
+      <span class="logo-text">Congress<span class="logo-accent">Tracker</span></span>
+    </a>
+    <a href="/?tab=politicians" class="back-link">&#8592; All Members</a>
+  </div>
+</nav>
+
+<main class="container politician-page">
+
+  <!-- ─── PROFILE HEADER ─── -->
+  <div class="profile-header-v2">
+
+    <!-- Left: photo + status -->
+    <div class="profile-left">
+      <div class="profile-photo-circle rep-border">
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Virginia_Foxx_official_photo_%28slight_crop%29.jpg/250px-Virginia_Foxx_official_photo_%28slight_crop%29.jpg" alt="Virginia Foxx" class="profile-photo-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="profile-photo-fallback-circ" style="display:none">V</div>
+        
+      </div>
+      <div class="profile-status-pill">
+        <span class="status-dot"></span>
+        Active
+      </div>
+      
+    </div>
+
+    <!-- Right: info -->
+    <div class="profile-right">
+      <div class="profile-name-row">
+        <h1 class="profile-name">Virginia Foxx</h1>
+        <span class="party-badge-lg rep">
+          Republican
+        </span>
+      </div>
+
+      <div class="profile-meta-row">
+        <span class="profile-meta-item">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Representatives
+        </span>
+        
+        <span class="profile-meta-item">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          NC – District 5
+        </span>
+        
+      </div>
+
+      <!-- Stats strip -->
+      <div class="profile-stats-strip">
+        <div class="pstat">
+          <span class="pstat-val">137</span>
+          <span class="pstat-label">Total Trades</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val">$2,048,507</span>
+          <span class="pstat-label">Total Volume</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val green">109</span>
+          <span class="pstat-label">Buys</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val red">28</span>
+          <span class="pstat-label">Sells</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val">2026-02-13</span>
+          <span class="pstat-label">Last Trade</span>
+        </div>
+        
+        
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val yellow">21.8d</span>
+          <span class="pstat-label">Avg Delay</span>
+        </div>
+        
+      </div>
+
+      <!-- Top tickers -->
+      
+      <div class="profile-tickers-row">
+        <span class="tickers-label">Most traded:</span>
+        
+        <span class="ticker-pill lg">ARLP <small>×20</small></span>
+        
+        <span class="ticker-pill lg">HTGC <small>×19</small></span>
+        
+        <span class="ticker-pill lg">ET <small>×14</small></span>
+        
+        <span class="ticker-pill lg">FLNG <small>×11</small></span>
+        
+        <span class="ticker-pill lg">ASC <small>×11</small></span>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- ─── TRADE HISTORY TABLE ─── -->
+  <div class="trades-section">
+    <div class="trades-section-header">
+      <h2>Trade History <span class="trades-count">137</span></h2>
+      
+      <div class="profile-type-summary">
+        <span class="type-badge buy">109 BUY</span>
+        <span class="type-badge sell">28 SELL</span>
+        <span class="buy-pct-pill">80% buy ratio</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="trades-table-wrap" style="max-height: 700px">
+      <table class="trades-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Ticker</th>
+            <th>Asset</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Filing Delay</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td class="muted">2026-02-13</td>
+            <td><strong class="ticker">ARLP</strong></td>
+            <td class="muted asset-cell" title="">
+              —
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-01-12</td>
+            <td><strong class="ticker">PSA</strong></td>
+            <td class="muted asset-cell" title="">
+              —
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">25d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-01-12</td>
+            <td><strong class="ticker">HTGC</strong></td>
+            <td class="muted asset-cell" title="">
+              —
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="yellow">25d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-12-30</td>
+            <td><strong class="ticker">EFC</strong></td>
+            <td class="muted asset-cell" title="ELLINGTON FINANCIAL INC">
+              ELLINGTON FINANCIAL INC
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">6d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-11-19</td>
+            <td><strong class="ticker">HTGC</strong></td>
+            <td class="muted asset-cell" title="Hercules Capital Inc">
+              Hercules Capital Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">12d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-11-17</td>
+            <td><strong class="ticker">ARLP</strong></td>
+            <td class="muted asset-cell" title="Alliance Resource Partners LP">
+              Alliance Resource Partners LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-11-14</td>
+            <td><strong class="ticker">ARLP</strong></td>
+            <td class="muted asset-cell" title="Alliance Resource Partners LP">
+              Alliance Resource Partners LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-30</td>
+            <td><strong class="ticker">EFC</strong></td>
+            <td class="muted asset-cell" title="ELLINGTON FINANCIAL INC">
+              ELLINGTON FINANCIAL INC
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">6d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-25</td>
+            <td><strong class="ticker">ARLP</strong></td>
+            <td class="muted asset-cell" title="Alliance Resource Partners LP">
+              Alliance Resource Partners LP
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-25</td>
+            <td><strong class="ticker">HTGC</strong></td>
+            <td class="muted asset-cell" title="Hercules Capital Inc">
+              Hercules Capital Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-08-19</td>
+            <td><strong class="ticker">HTGC</strong></td>
+            <td class="muted asset-cell" title="Hercules Capital Inc">
+              Hercules Capital Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-08-14</td>
+            <td><strong class="ticker">ARLP</strong></td>
+            <td class="muted asset-cell" title="Alliance Resource Partners LP">
+              Alliance Resource Partners LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">25d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-06-30</td>
+            <td><strong class="ticker">EFC</strong></td>
+            <td class="muted asset-cell" title="ELLINGTON FINANCIAL INC">
+              ELLINGTON FINANCIAL INC
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">3d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-06-24</td>
+            <td><strong class="ticker">ET</strong></td>
+            <td class="muted asset-cell" title="Energy Transfer LP">
+              Energy Transfer LP
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">9d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-06-24</td>
+            <td><strong class="ticker">BMY</strong></td>
+            <td class="muted asset-cell" title="Bristol-Myers Squibb Co">
+              Bristol-Myers Squibb Co
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">9d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-05-20</td>
+            <td><strong class="ticker">HTGC</strong></td>
+            <td class="muted asset-cell" title="Hercules Capital Inc">
+              Hercules Capital Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-05-15</td>
+            <td><strong class="ticker">ARLP</strong></td>
+            <td class="muted asset-cell" title="Alliance Resource Partners LP">
+              Alliance Resource Partners LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">19d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-31</td>
+            <td><strong class="ticker">EFC</strong></td>
+            <td class="muted asset-cell" title="ELLINGTON FINANCIAL INC">
+              ELLINGTON FINANCIAL INC
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">4d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-07</td>
+            <td><strong class="ticker">ET</strong></td>
+            <td class="muted asset-cell" title="Energy Transfer LP">
+              Energy Transfer LP
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-07</td>
+            <td><strong class="ticker">ARLP</strong></td>
+            <td class="muted asset-cell" title="Alliance Resource Partners LP">
+              Alliance Resource Partners LP
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-07</td>
+            <td><strong class="ticker">FLNG</strong></td>
+            <td class="muted asset-cell" title="FLEX LNG LTD">
+              FLEX LNG LTD
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-07</td>
+            <td><strong class="ticker">PBA</strong></td>
+            <td class="muted asset-cell" title="Pembina Pipeline Corp">
+              Pembina Pipeline Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-05</td>
+            <td><strong class="ticker">HTGC</strong></td>
+            <td class="muted asset-cell" title="Hercules Capital Inc">
+              Hercules Capital Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">30d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-02-19</td>
+            <td><strong class="ticker">ET</strong></td>
+            <td class="muted asset-cell" title="Energy Transfer LP">
+              Energy Transfer LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">12d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-02-14</td>
+            <td><strong class="ticker">ARLP</strong></td>
+            <td class="muted asset-cell" title="Alliance Resource Partners LP">
+              Alliance Resource Partners LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-12-30</td>
+            <td><strong class="ticker">EFC</strong></td>
+            <td class="muted asset-cell" title="ELLINGTON FINANCIAL INC">
+              ELLINGTON FINANCIAL INC
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">7d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-12-06</td>
+            <td><strong class="ticker">FLNG</strong></td>
+            <td class="muted asset-cell" title="FLEX LNG LTD">
+              FLEX LNG LTD
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-12-06</td>
+            <td><strong class="ticker">JNJ</strong></td>
+            <td class="muted asset-cell" title="Johnson &amp; Johnson">
+              Johnson &amp; Johnson
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-12-06</td>
+            <td><strong class="ticker">T</strong></td>
+            <td class="muted asset-cell" title="AT&amp;T Inc">
+              AT&amp;T Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-12-06</td>
+            <td><strong class="ticker">VIA</strong></td>
+            <td class="muted asset-cell" title="Via Renewables Inc">
+              Via Renewables Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-12-06</td>
+            <td><strong class="ticker">PBA</strong></td>
+            <td class="muted asset-cell" title="Pembina Pipeline Corp">
+              Pembina Pipeline Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-12-06</td>
+            <td><strong class="ticker">BMY</strong></td>
+            <td class="muted asset-cell" title="Bristol-Myers Squibb Co">
+              Bristol-Myers Squibb Co
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-12-06</td>
+            <td><strong class="ticker">ET</strong></td>
+            <td class="muted asset-cell" title="Energy Transfer LP">
+              Energy Transfer LP
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-12-06</td>
+            <td><strong class="ticker">ASC</strong></td>
+            <td class="muted asset-cell" title="ARDMORE SHIPPING CORP">
+              ARDMORE SHIPPING CORP
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-12-06</td>
+            <td><strong class="ticker">AEP</strong></td>
+            <td class="muted asset-cell" title="American Electric Power Co Inc">
+              American Electric Power Co Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-12-06</td>
+            <td><strong class="ticker">ABBV</strong></td>
+            <td class="muted asset-cell" title="AbbVie Inc. Common Stock">
+              AbbVie Inc. Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-12-06</td>
+            <td><strong class="ticker">ARLP</strong></td>
+            <td class="muted asset-cell" title="Alliance Resource Partners LP">
+              Alliance Resource Partners LP
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-12-06</td>
+            <td><strong class="ticker">PSA</strong></td>
+            <td class="muted asset-cell" title="Public Storage Common Stock">
+              Public Storage Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-12-06</td>
+            <td><strong class="ticker">DUK</strong></td>
+            <td class="muted asset-cell" title="Duke Energy Corporation">
+              Duke Energy Corporation
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-12-06</td>
+            <td><strong class="ticker">AMGN</strong></td>
+            <td class="muted asset-cell" title="Amgen Inc. - Common Stock">
+              Amgen Inc. - Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-11-20</td>
+            <td><strong class="ticker">HTGC</strong></td>
+            <td class="muted asset-cell" title="Hercules Capital Inc">
+              Hercules Capital Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-11-19</td>
+            <td><strong class="ticker">ET</strong></td>
+            <td class="muted asset-cell" title="Energy Transfer LP">
+              Energy Transfer LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-11-14</td>
+            <td><strong class="ticker">ARLP</strong></td>
+            <td class="muted asset-cell" title="Alliance Resource Partners LP">
+              Alliance Resource Partners LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-11-01</td>
+            <td><strong class="ticker">T</strong></td>
+            <td class="muted asset-cell" title="AT&amp;T Inc">
+              AT&amp;T Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">40d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-23</td>
+            <td><strong class="ticker">HTGC</strong></td>
+            <td class="muted asset-cell" title="Hercules Capital Inc">
+              Hercules Capital Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-09-30</td>
+            <td><strong class="ticker">EFC</strong></td>
+            <td class="muted asset-cell" title="ELLINGTON FINANCIAL INC">
+              ELLINGTON FINANCIAL INC
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-08-20</td>
+            <td><strong class="ticker">HTGC</strong></td>
+            <td class="muted asset-cell" title="Hercules Capital Inc">
+              Hercules Capital Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-08-19</td>
+            <td><strong class="ticker">ET</strong></td>
+            <td class="muted asset-cell" title="Energy Transfer LP">
+              Energy Transfer LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">16d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-08-14</td>
+            <td><strong class="ticker">ARLP</strong></td>
+            <td class="muted asset-cell" title="Alliance Resource Partners LP">
+              Alliance Resource Partners LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-08-01</td>
+            <td><strong class="ticker">T</strong></td>
+            <td class="muted asset-cell" title="AT&amp;T Inc">
+              AT&amp;T Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">34d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-07-11</td>
+            <td><strong class="ticker">ASC</strong></td>
+            <td class="muted asset-cell" title="ARDMORE SHIPPING CORP">
+              ARDMORE SHIPPING CORP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">26d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-07-09</td>
+            <td><strong class="ticker">ASC</strong></td>
+            <td class="muted asset-cell" title="ARDMORE SHIPPING CORP">
+              ARDMORE SHIPPING CORP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-07-08</td>
+            <td><strong class="ticker">ASC</strong></td>
+            <td class="muted asset-cell" title="ARDMORE SHIPPING CORP">
+              ARDMORE SHIPPING CORP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">29d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-07-01</td>
+            <td><strong class="ticker">EFC</strong></td>
+            <td class="muted asset-cell" title="ELLINGTON FINANCIAL INC">
+              ELLINGTON FINANCIAL INC
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">36d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-21</td>
+            <td><strong class="ticker">HTGC</strong></td>
+            <td class="muted asset-cell" title="Hercules Capital Inc">
+              Hercules Capital Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">16d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-20</td>
+            <td><strong class="ticker">ET</strong></td>
+            <td class="muted asset-cell" title="Energy Transfer LP">
+              Energy Transfer LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-15</td>
+            <td><strong class="ticker">ARLP</strong></td>
+            <td class="muted asset-cell" title="Alliance Resource Partners LP">
+              Alliance Resource Partners LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-02</td>
+            <td><strong class="ticker">ET</strong></td>
+            <td class="muted asset-cell" title="Energy Transfer LP">
+              Energy Transfer LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">35d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-01</td>
+            <td><strong class="ticker">T</strong></td>
+            <td class="muted asset-cell" title="AT&amp;T Inc">
+              AT&amp;T Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">36d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-01</td>
+            <td><strong class="ticker">ET</strong></td>
+            <td class="muted asset-cell" title="Energy Transfer LP">
+              Energy Transfer LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">36d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-04-30</td>
+            <td><strong class="ticker">ET</strong></td>
+            <td class="muted asset-cell" title="Energy Transfer LP">
+              Energy Transfer LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">6d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-04-16</td>
+            <td><strong class="ticker">HTGC</strong></td>
+            <td class="muted asset-cell" title="Hercules Capital Inc">
+              Hercules Capital Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-04-09</td>
+            <td><strong class="ticker">ASC</strong></td>
+            <td class="muted asset-cell" title="ARDMORE SHIPPING CORP">
+              ARDMORE SHIPPING CORP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-04-02</td>
+            <td><strong class="ticker">EFC</strong></td>
+            <td class="muted asset-cell" title="ELLINGTON FINANCIAL INC">
+              ELLINGTON FINANCIAL INC
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">34d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-03-07</td>
+            <td><strong class="ticker">HTGC</strong></td>
+            <td class="muted asset-cell" title="Hercules Capital Inc">
+              Hercules Capital Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">34d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-03-06</td>
+            <td><strong class="ticker">ASC</strong></td>
+            <td class="muted asset-cell" title="ARDMORE SHIPPING CORP">
+              ARDMORE SHIPPING CORP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">35d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-03-04</td>
+            <td><strong class="ticker">ASC</strong></td>
+            <td class="muted asset-cell" title="ARDMORE SHIPPING CORP">
+              ARDMORE SHIPPING CORP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">37d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-02-28</td>
+            <td><strong class="ticker">DUK</strong></td>
+            <td class="muted asset-cell" title="Duke Energy Corp">
+              Duke Energy Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">8d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-02-27</td>
+            <td><strong class="ticker">ASC</strong></td>
+            <td class="muted asset-cell" title="ARDMORE SHIPPING CORP">
+              ARDMORE SHIPPING CORP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">9d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-02-26</td>
+            <td><strong class="ticker">FLNG</strong></td>
+            <td class="muted asset-cell" title="FLEX LNG LTD">
+              FLEX LNG LTD
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">10d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-02-26</td>
+            <td><strong class="ticker">ARLP</strong></td>
+            <td class="muted asset-cell" title="Alliance Resource Partners LP">
+              Alliance Resource Partners LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">10d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-02-23</td>
+            <td><strong class="ticker">FLNG</strong></td>
+            <td class="muted asset-cell" title="FLEX LNG LTD">
+              FLEX LNG LTD
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-02-23</td>
+            <td><strong class="ticker">ARLP</strong></td>
+            <td class="muted asset-cell" title="Alliance Resource Partners LP">
+              Alliance Resource Partners LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-02-23</td>
+            <td><strong class="ticker">ASC</strong></td>
+            <td class="muted asset-cell" title="ARDMORE SHIPPING CORP">
+              ARDMORE SHIPPING CORP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-02-21</td>
+            <td><strong class="ticker">ET</strong></td>
+            <td class="muted asset-cell" title="Energy Transfer LP">
+              Energy Transfer LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-02-15</td>
+            <td><strong class="ticker">ASC</strong></td>
+            <td class="muted asset-cell" title="ARDMORE SHIPPING CORP">
+              ARDMORE SHIPPING CORP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-02-15</td>
+            <td><strong class="ticker">ARLP</strong></td>
+            <td class="muted asset-cell" title="Alliance Resource Partners LP">
+              Alliance Resource Partners LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-02-09</td>
+            <td><strong class="ticker">FLNG</strong></td>
+            <td class="muted asset-cell" title="FLEX LNG LTD">
+              FLEX LNG LTD
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-02-07</td>
+            <td><strong class="ticker">FLNG</strong></td>
+            <td class="muted asset-cell" title="FLEX LNG LTD">
+              FLEX LNG LTD
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">29d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-02-05</td>
+            <td><strong class="ticker">ASC</strong></td>
+            <td class="muted asset-cell" title="ARDMORE SHIPPING CORP">
+              ARDMORE SHIPPING CORP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-02-02</td>
+            <td><strong class="ticker">T</strong></td>
+            <td class="muted asset-cell" title="AT&amp;T Inc">
+              AT&amp;T Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">34d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-02-02</td>
+            <td><strong class="ticker">FLNG</strong></td>
+            <td class="muted asset-cell" title="FLEX LNG LTD">
+              FLEX LNG LTD
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">34d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-02-01</td>
+            <td><strong class="ticker">HTGC</strong></td>
+            <td class="muted asset-cell" title="Hercules Capital Inc">
+              Hercules Capital Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">35d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-18</td>
+            <td><strong class="ticker">ET</strong></td>
+            <td class="muted asset-cell" title="Energy Transfer LP">
+              Energy Transfer LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">18d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-17</td>
+            <td><strong class="ticker">CRT</strong></td>
+            <td class="muted asset-cell" title="CROSS TIMBERS ROYALTY TRUST">
+              CROSS TIMBERS ROYALTY TRUST
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">19d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-17</td>
+            <td><strong class="ticker">SCHX</strong></td>
+            <td class="muted asset-cell" title="Schwab US Large-Cap ETF">
+              Schwab US Large-Cap ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">19d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-17</td>
+            <td><strong class="ticker">ET</strong></td>
+            <td class="muted asset-cell" title="Energy Transfer LP">
+              Energy Transfer LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">19d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-16</td>
+            <td><strong class="ticker">DUK</strong></td>
+            <td class="muted asset-cell" title="Duke Energy Corp">
+              Duke Energy Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-16</td>
+            <td><strong class="ticker">MO</strong></td>
+            <td class="muted asset-cell" title="Altria Group Inc">
+              Altria Group Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-16</td>
+            <td><strong class="ticker">HTGC</strong></td>
+            <td class="muted asset-cell" title="Hercules Capital Inc">
+              Hercules Capital Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-16</td>
+            <td><strong class="ticker">ET</strong></td>
+            <td class="muted asset-cell" title="Energy Transfer LP">
+              Energy Transfer LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-11</td>
+            <td><strong class="ticker">MO</strong></td>
+            <td class="muted asset-cell" title="Altria Group Inc">
+              Altria Group Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">25d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-10</td>
+            <td><strong class="ticker">MO</strong></td>
+            <td class="muted asset-cell" title="Altria Group Inc">
+              Altria Group Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">26d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-08</td>
+            <td><strong class="ticker">SCHX</strong></td>
+            <td class="muted asset-cell" title="Schwab US Large-Cap ETF">
+              Schwab US Large-Cap ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-19</td>
+            <td><strong class="ticker">DUK</strong></td>
+            <td class="muted asset-cell" title="Duke Energy Corp">
+              Duke Energy Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">16d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-08</td>
+            <td><strong class="ticker">CRT</strong></td>
+            <td class="muted asset-cell" title="CROSS TIMBERS ROYALTY TRUST">
+              CROSS TIMBERS ROYALTY TRUST
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">FLNG</strong></td>
+            <td class="muted asset-cell" title="FLEX LNG LTD">
+              FLEX LNG LTD
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-11-29</td>
+            <td><strong class="ticker">CRT</strong></td>
+            <td class="muted asset-cell" title="CROSS TIMBERS ROYALTY TRUST">
+              CROSS TIMBERS ROYALTY TRUST
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">6d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-11-28</td>
+            <td><strong class="ticker">CRT</strong></td>
+            <td class="muted asset-cell" title="CROSS TIMBERS ROYALTY TRUST">
+              CROSS TIMBERS ROYALTY TRUST
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">7d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-11-28</td>
+            <td><strong class="ticker">AAIC</strong></td>
+            <td class="muted asset-cell" title="Arlington Asset Investment Corp">
+              Arlington Asset Investment Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">7d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-11-28</td>
+            <td><strong class="ticker">FLNG</strong></td>
+            <td class="muted asset-cell" title="FLEX LNG LTD">
+              FLEX LNG LTD
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">7d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-11-15</td>
+            <td><strong class="ticker">ARLP</strong></td>
+            <td class="muted asset-cell" title="Alliance Resource Partners LP">
+              Alliance Resource Partners LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-11-10</td>
+            <td><strong class="ticker">USDP</strong></td>
+            <td class="muted asset-cell" title="USD Partners LP">
+              USD Partners LP
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">25d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-11-02</td>
+            <td><strong class="ticker">T</strong></td>
+            <td class="muted asset-cell" title="AT&amp;T Inc">
+              AT&amp;T Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">33d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-25</td>
+            <td><strong class="ticker">HTGC</strong></td>
+            <td class="muted asset-cell" title="Hercules Capital Inc">
+              Hercules Capital Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-23</td>
+            <td><strong class="ticker">HTGC</strong></td>
+            <td class="muted asset-cell" title="Hercules Capital Inc">
+              Hercules Capital Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-20</td>
+            <td><strong class="ticker">HTGC</strong></td>
+            <td class="muted asset-cell" title="Hercules Capital Inc">
+              Hercules Capital Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">18d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-11</td>
+            <td><strong class="ticker">MO</strong></td>
+            <td class="muted asset-cell" title="Altria Group Inc">
+              Altria Group Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-03</td>
+            <td><strong class="ticker">HTGC</strong></td>
+            <td class="muted asset-cell" title="Hercules Capital Inc">
+              Hercules Capital Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">35d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-03</td>
+            <td><strong class="ticker">PAA</strong></td>
+            <td class="muted asset-cell" title="Plains All American Pipeline LP">
+              Plains All American Pipeline LP
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">35d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-02</td>
+            <td><strong class="ticker">FLNG</strong></td>
+            <td class="muted asset-cell" title="FLEX LNG LTD">
+              FLEX LNG LTD
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">36d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-02</td>
+            <td><strong class="ticker">CRT</strong></td>
+            <td class="muted asset-cell" title="CROSS TIMBERS ROYALTY TRUST">
+              CROSS TIMBERS ROYALTY TRUST
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">36d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-09-22</td>
+            <td><strong class="ticker">APO</strong></td>
+            <td class="muted asset-cell" title="Apollo Global Management Inc">
+              Apollo Global Management Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-09-21</td>
+            <td><strong class="ticker">HTGC</strong></td>
+            <td class="muted asset-cell" title="Hercules Capital Inc">
+              Hercules Capital Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-09-21</td>
+            <td><strong class="ticker">VGR</strong></td>
+            <td class="muted asset-cell" title="Vector Group Ltd">
+              Vector Group Ltd
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-09-19</td>
+            <td><strong class="ticker">AAIC</strong></td>
+            <td class="muted asset-cell" title="Arlington Asset Investment Corp">
+              Arlington Asset Investment Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-09-19</td>
+            <td><strong class="ticker">CRT</strong></td>
+            <td class="muted asset-cell" title="CROSS TIMBERS ROYALTY TRUST">
+              CROSS TIMBERS ROYALTY TRUST
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-09-19</td>
+            <td><strong class="ticker">DUK</strong></td>
+            <td class="muted asset-cell" title="Duke Energy Corp">
+              Duke Energy Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-09-18</td>
+            <td><strong class="ticker">GPP</strong></td>
+            <td class="muted asset-cell" title="Green Plains Partners LP">
+              Green Plains Partners LP
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">18d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-09-18</td>
+            <td><strong class="ticker">VGR</strong></td>
+            <td class="muted asset-cell" title="Vector Group Ltd">
+              Vector Group Ltd
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">18d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-08-29</td>
+            <td><strong class="ticker">TAK</strong></td>
+            <td class="muted asset-cell" title="Takeda Pharmaceutical Co Ltd">
+              Takeda Pharmaceutical Co Ltd
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">7d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-08-16</td>
+            <td><strong class="ticker">ARLP</strong></td>
+            <td class="muted asset-cell" title="Alliance Resource Partners LP">
+              Alliance Resource Partners LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-08-02</td>
+            <td><strong class="ticker">T</strong></td>
+            <td class="muted asset-cell" title="AT&amp;T Inc">
+              AT&amp;T Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">34d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-07-11</td>
+            <td><strong class="ticker">MO</strong></td>
+            <td class="muted asset-cell" title="Altria Group Inc">
+              Altria Group Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-06-30</td>
+            <td><strong class="ticker">VGR</strong></td>
+            <td class="muted asset-cell" title="Vector Group Ltd">
+              Vector Group Ltd
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">7d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-06-20</td>
+            <td><strong class="ticker">DUK</strong></td>
+            <td class="muted asset-cell" title="Duke Energy Corp">
+              Duke Energy Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-26</td>
+            <td><strong class="ticker">SIRE</strong></td>
+            <td class="muted asset-cell" title="Sisecam Resources LP">
+              Sisecam Resources LP
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">7d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-19</td>
+            <td><strong class="ticker">SIRE</strong></td>
+            <td class="muted asset-cell" title="Sisecam Resources LP">
+              Sisecam Resources LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-17</td>
+            <td><strong class="ticker">CRT</strong></td>
+            <td class="muted asset-cell" title="CROSS TIMBERS ROYALTY TRUST">
+              CROSS TIMBERS ROYALTY TRUST
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">16d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-17</td>
+            <td><strong class="ticker">GPP</strong></td>
+            <td class="muted asset-cell" title="Green Plains Partners LP">
+              Green Plains Partners LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">16d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-16</td>
+            <td><strong class="ticker">ARLP</strong></td>
+            <td class="muted asset-cell" title="Alliance Resource Partners LP">
+              Alliance Resource Partners LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-16</td>
+            <td><strong class="ticker">FLNG</strong></td>
+            <td class="muted asset-cell" title="FLEX LNG LTD">
+              FLEX LNG LTD
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-10</td>
+            <td><strong class="ticker">ARLP</strong></td>
+            <td class="muted asset-cell" title="Alliance Resource Partners LP">
+              Alliance Resource Partners LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">23d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-08</td>
+            <td><strong class="ticker">ARLP</strong></td>
+            <td class="muted asset-cell" title="Alliance Resource Partners LP">
+              Alliance Resource Partners LP
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">25d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-02</td>
+            <td><strong class="ticker">T</strong></td>
+            <td class="muted asset-cell" title="AT&amp;T Inc">
+              AT&amp;T Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-01</td>
+            <td><strong class="ticker">MO</strong></td>
+            <td class="muted asset-cell" title="Altria Group Inc">
+              Altria Group Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">32d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-01</td>
+            <td><strong class="ticker">CRT</strong></td>
+            <td class="muted asset-cell" title="CROSS TIMBERS ROYALTY TRUST">
+              CROSS TIMBERS ROYALTY TRUST
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">32d</span>
+              
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>Data: Official House Clerk PTR disclosures | InsiderFinance | Quiver Quantitative</p>
+  </div>
+</footer>
+
+</body>
+</html>

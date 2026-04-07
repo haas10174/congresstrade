@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John Curtis | Congress Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo">
+      <span class="logo-icon">C</span>
+      <span class="logo-text">Congress<span class="logo-accent">Tracker</span></span>
+    </a>
+    <a href="/?tab=politicians" class="back-link">&#8592; All Members</a>
+  </div>
+</nav>
+
+<main class="container politician-page">
+
+  <!-- ─── PROFILE HEADER ─── -->
+  <div class="profile-header-v2">
+
+    <!-- Left: photo + status -->
+    <div class="profile-left">
+      <div class="profile-photo-circle rep-border">
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Senator_John_Curtis_Official_Portrait.jpg/250px-Senator_John_Curtis_Official_Portrait.jpg" alt="John Curtis" class="profile-photo-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="profile-photo-fallback-circ" style="display:none">J</div>
+        
+      </div>
+      <div class="profile-status-pill">
+        <span class="status-dot"></span>
+        Active
+      </div>
+      
+    </div>
+
+    <!-- Right: info -->
+    <div class="profile-right">
+      <div class="profile-name-row">
+        <h1 class="profile-name">John Curtis</h1>
+        <span class="party-badge-lg rep">
+          Republican
+        </span>
+      </div>
+
+      <div class="profile-meta-row">
+        <span class="profile-meta-item">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          house
+        </span>
+        
+        <span class="profile-meta-item">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          UT
+        </span>
+        
+      </div>
+
+      <!-- Stats strip -->
+      <div class="profile-stats-strip">
+        <div class="pstat">
+          <span class="pstat-val">85</span>
+          <span class="pstat-label">Total Trades</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val">$753,500</span>
+          <span class="pstat-label">Total Volume</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val green">13</span>
+          <span class="pstat-label">Buys</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val red">72</span>
+          <span class="pstat-label">Sells</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val">2023-12-04</span>
+          <span class="pstat-label">Last Trade</span>
+        </div>
+        
+        
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val green">17.0d</span>
+          <span class="pstat-label">Avg Delay</span>
+        </div>
+        
+      </div>
+
+      <!-- Top tickers -->
+      
+      <div class="profile-tickers-row">
+        <span class="tickers-label">Most traded:</span>
+        
+        <span class="ticker-pill lg">EW <small>×3</small></span>
+        
+        <span class="ticker-pill lg">MSFT <small>×3</small></span>
+        
+        <span class="ticker-pill lg">ADBE <small>×2</small></span>
+        
+        <span class="ticker-pill lg">BSX <small>×2</small></span>
+        
+        <span class="ticker-pill lg">AMAT <small>×2</small></span>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- ─── TRADE HISTORY TABLE ─── -->
+  <div class="trades-section">
+    <div class="trades-section-header">
+      <h2>Trade History <span class="trades-count">85</span></h2>
+      
+      <div class="profile-type-summary">
+        <span class="type-badge buy">13 BUY</span>
+        <span class="type-badge sell">72 SELL</span>
+        <span class="buy-pct-pill">15% buy ratio</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="trades-table-wrap" style="max-height: 700px">
+      <table class="trades-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Ticker</th>
+            <th>Asset</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Filing Delay</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">ABT</strong></td>
+            <td class="muted asset-cell" title="Abbott Laboratories">
+              Abbott Laboratories
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">HD</strong></td>
+            <td class="muted asset-cell" title="The Home Depot Inc">
+              The Home Depot Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">ICE</strong></td>
+            <td class="muted asset-cell" title="Intercontinental Exchange Inc">
+              Intercontinental Exchange Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">JPM</strong></td>
+            <td class="muted asset-cell" title="JPMorgan Chase &amp; Co">
+              JPMorgan Chase &amp; Co
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">KLAC</strong></td>
+            <td class="muted asset-cell" title="KLA Corp">
+              KLA Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">LRCX</strong></td>
+            <td class="muted asset-cell" title="Lam Research Corp">
+              Lam Research Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">MA</strong></td>
+            <td class="muted asset-cell" title="Mastercard Inc">
+              Mastercard Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">META</strong></td>
+            <td class="muted asset-cell" title="Meta Platforms Inc">
+              Meta Platforms Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">MSFT</strong></td>
+            <td class="muted asset-cell" title="Microsoft Corp">
+              Microsoft Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">NKE</strong></td>
+            <td class="muted asset-cell" title="Nike Inc">
+              Nike Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">NVDA</strong></td>
+            <td class="muted asset-cell" title="NVIDIA Corporation">
+              NVIDIA Corporation
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">PANW</strong></td>
+            <td class="muted asset-cell" title="Palo Alto Networks Inc">
+              Palo Alto Networks Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">PEP</strong></td>
+            <td class="muted asset-cell" title="PepsiCo Inc">
+              PepsiCo Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">ADBE</strong></td>
+            <td class="muted asset-cell" title="Adobe Inc">
+              Adobe Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">RTX</strong></td>
+            <td class="muted asset-cell" title="RTX Corp">
+              RTX Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">SPGI</strong></td>
+            <td class="muted asset-cell" title="S&amp;P Global Inc">
+              S&amp;P Global Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">CRM</strong></td>
+            <td class="muted asset-cell" title="salesforce.com Inc">
+              salesforce.com Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">SHW</strong></td>
+            <td class="muted asset-cell" title="The Sherwin-Williams Co">
+              The Sherwin-Williams Co
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">SBUX</strong></td>
+            <td class="muted asset-cell" title="Starbucks Corp">
+              Starbucks Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">TXN</strong></td>
+            <td class="muted asset-cell" title="Texas Instruments Inc">
+              Texas Instruments Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">TMO</strong></td>
+            <td class="muted asset-cell" title="Thermo Fisher Scientific Inc">
+              Thermo Fisher Scientific Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">TMUS</strong></td>
+            <td class="muted asset-cell" title="T-Mobile US Inc">
+              T-Mobile US Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">UNP</strong></td>
+            <td class="muted asset-cell" title="Union Pacific Corp">
+              Union Pacific Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">UNH</strong></td>
+            <td class="muted asset-cell" title="Unitedhealth Group Inc">
+              Unitedhealth Group Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">VLO</strong></td>
+            <td class="muted asset-cell" title="Valero Energy Corp">
+              Valero Energy Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">V</strong></td>
+            <td class="muted asset-cell" title="Visa Inc">
+              Visa Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">ZTS</strong></td>
+            <td class="muted asset-cell" title="Zoetis Inc">
+              Zoetis Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">HON</strong></td>
+            <td class="muted asset-cell" title="Honeywell International Inc">
+              Honeywell International Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">PG</strong></td>
+            <td class="muted asset-cell" title="The Procter &amp; Gamble Co">
+              The Procter &amp; Gamble Co
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">HLT</strong></td>
+            <td class="muted asset-cell" title="Hilton Worldwide Holdings Inc">
+              Hilton Worldwide Holdings Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">KO</strong></td>
+            <td class="muted asset-cell" title="The Coca-Cola Co">
+              The Coca-Cola Co
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">GS</strong></td>
+            <td class="muted asset-cell" title="The Goldman Sachs Group Inc">
+              The Goldman Sachs Group Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">AMD</strong></td>
+            <td class="muted asset-cell" title="Advanced Micro Devices Inc">
+              Advanced Micro Devices Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">GOOGL</strong></td>
+            <td class="muted asset-cell" title="Alphabet Inc">
+              Alphabet Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">AMZN</strong></td>
+            <td class="muted asset-cell" title="Amazon.com Inc">
+              Amazon.com Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">AXP</strong></td>
+            <td class="muted asset-cell" title="American Express Co">
+              American Express Co
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">AAPL</strong></td>
+            <td class="muted asset-cell" title="Apple Inc">
+              Apple Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">AMAT</strong></td>
+            <td class="muted asset-cell" title="Applied Materials Inc">
+              Applied Materials Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">AZO</strong></td>
+            <td class="muted asset-cell" title="AutoZone Inc">
+              AutoZone Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">BLK</strong></td>
+            <td class="muted asset-cell" title="Blackrock Inc">
+              Blackrock Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">BSX</strong></td>
+            <td class="muted asset-cell" title="Boston Scientific Corp">
+              Boston Scientific Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">CAT</strong></td>
+            <td class="muted asset-cell" title="Caterpillar Inc">
+              Caterpillar Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">CVX</strong></td>
+            <td class="muted asset-cell" title="Chevron Corp">
+              Chevron Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">CMG</strong></td>
+            <td class="muted asset-cell" title="Chipotle Mexican Grill Inc">
+              Chipotle Mexican Grill Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">CMCSA</strong></td>
+            <td class="muted asset-cell" title="Comcast Corp">
+              Comcast Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">COP</strong></td>
+            <td class="muted asset-cell" title="ConocoPhillips">
+              ConocoPhillips
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">STZ</strong></td>
+            <td class="muted asset-cell" title="Constellation Brands Inc">
+              Constellation Brands Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">COST</strong></td>
+            <td class="muted asset-cell" title="Costco Wholesale Corp">
+              Costco Wholesale Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">CSX</strong></td>
+            <td class="muted asset-cell" title="CSX Corp">
+              CSX Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">DHR</strong></td>
+            <td class="muted asset-cell" title="Danaher Corp">
+              Danaher Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">DE</strong></td>
+            <td class="muted asset-cell" title="DEERE &amp; COMPANY">
+              DEERE &amp; COMPANY
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">EW</strong></td>
+            <td class="muted asset-cell" title="Edwards Lifesciences Corp">
+              Edwards Lifesciences Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">ELV</strong></td>
+            <td class="muted asset-cell" title="Elevance Health Inc">
+              Elevance Health Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">LLY</strong></td>
+            <td class="muted asset-cell" title="Eli Lilly and Co">
+              Eli Lilly and Co
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">EMR</strong></td>
+            <td class="muted asset-cell" title="Emerson Electric Co">
+              Emerson Electric Co
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-04</td>
+            <td><strong class="ticker">FISV</strong></td>
+            <td class="muted asset-cell" title="Fiserv Inc">
+              Fiserv Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-09-13</td>
+            <td><strong class="ticker">JNJ</strong></td>
+            <td class="muted asset-cell" title="Johnson &amp; Johnson">
+              Johnson &amp; Johnson
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-09-13</td>
+            <td><strong class="ticker">WM</strong></td>
+            <td class="muted asset-cell" title="Waste Management Inc">
+              Waste Management Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-09-13</td>
+            <td><strong class="ticker">UNP</strong></td>
+            <td class="muted asset-cell" title="Union Pacific Corp">
+              Union Pacific Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-09-13</td>
+            <td><strong class="ticker">PANW</strong></td>
+            <td class="muted asset-cell" title="Palo Alto Networks Inc">
+              Palo Alto Networks Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-09-13</td>
+            <td><strong class="ticker">ADBE</strong></td>
+            <td class="muted asset-cell" title="Adobe Inc">
+              Adobe Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-09-13</td>
+            <td><strong class="ticker">EMR</strong></td>
+            <td class="muted asset-cell" title="Emerson Electric Co">
+              Emerson Electric Co
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-09-13</td>
+            <td><strong class="ticker">ABT</strong></td>
+            <td class="muted asset-cell" title="Abbott Laboratories">
+              Abbott Laboratories
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-09-13</td>
+            <td><strong class="ticker">LLY</strong></td>
+            <td class="muted asset-cell" title="Eli Lilly and Co">
+              Eli Lilly and Co
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-06-21</td>
+            <td><strong class="ticker">MSFT</strong></td>
+            <td class="muted asset-cell" title="Microsoft Corp">
+              Microsoft Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">47d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-06-21</td>
+            <td><strong class="ticker">VLO</strong></td>
+            <td class="muted asset-cell" title="Valero Energy Corp">
+              Valero Energy Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">47d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-06-21</td>
+            <td><strong class="ticker">TMUS</strong></td>
+            <td class="muted asset-cell" title="T-Mobile US Inc">
+              T-Mobile US Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">47d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-06-21</td>
+            <td><strong class="ticker">SYY</strong></td>
+            <td class="muted asset-cell" title="Sysco Corporation">
+              Sysco Corporation
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">47d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-06-21</td>
+            <td><strong class="ticker">SHW</strong></td>
+            <td class="muted asset-cell" title="The Sherwin-Williams Co">
+              The Sherwin-Williams Co
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">47d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-06-21</td>
+            <td><strong class="ticker">UNH</strong></td>
+            <td class="muted asset-cell" title="Unitedhealth Group Inc">
+              Unitedhealth Group Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">47d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-06-21</td>
+            <td><strong class="ticker">LRCX</strong></td>
+            <td class="muted asset-cell" title="Lam Research Corp">
+              Lam Research Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">47d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-06-21</td>
+            <td><strong class="ticker">EW</strong></td>
+            <td class="muted asset-cell" title="Edwards Lifesciences Corp">
+              Edwards Lifesciences Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">47d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-06-21</td>
+            <td><strong class="ticker">KO</strong></td>
+            <td class="muted asset-cell" title="The Coca-Cola Co">
+              The Coca-Cola Co
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">47d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-06-21</td>
+            <td><strong class="ticker">AMAT</strong></td>
+            <td class="muted asset-cell" title="Applied Materials Inc">
+              Applied Materials Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">47d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-06-21</td>
+            <td><strong class="ticker">AMD</strong></td>
+            <td class="muted asset-cell" title="Advanced Micro Devices Inc">
+              Advanced Micro Devices Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">47d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-11</td>
+            <td><strong class="ticker">MSFT</strong></td>
+            <td class="muted asset-cell" title="Microsoft Corp">
+              Microsoft Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-26</td>
+            <td><strong class="ticker">BSX</strong></td>
+            <td class="muted asset-cell" title="Boston Scientific Corp">
+              Boston Scientific Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-26</td>
+            <td><strong class="ticker">CAT</strong></td>
+            <td class="muted asset-cell" title="Caterpillar Inc">
+              Caterpillar Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-26</td>
+            <td><strong class="ticker">CSX</strong></td>
+            <td class="muted asset-cell" title="CSX Corp">
+              CSX Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-26</td>
+            <td><strong class="ticker">EW</strong></td>
+            <td class="muted asset-cell" title="Edwards Lifesciences Corp">
+              Edwards Lifesciences Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-26</td>
+            <td><strong class="ticker">ELV</strong></td>
+            <td class="muted asset-cell" title="Elevance Health Inc">
+              Elevance Health Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-26</td>
+            <td><strong class="ticker">MA</strong></td>
+            <td class="muted asset-cell" title="Mastercard Inc">
+              Mastercard Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-26</td>
+            <td><strong class="ticker">NVDA</strong></td>
+            <td class="muted asset-cell" title="NVIDIA Corporation">
+              NVIDIA Corporation
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-26</td>
+            <td><strong class="ticker">SBUX</strong></td>
+            <td class="muted asset-cell" title="Starbucks Corp">
+              Starbucks Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-26</td>
+            <td><strong class="ticker">V</strong></td>
+            <td class="muted asset-cell" title="Visa Inc">
+              Visa Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>Data: Official House Clerk PTR disclosures | InsiderFinance | Quiver Quantitative</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,2506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charles Fleischmann | Congress Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo">
+      <span class="logo-icon">C</span>
+      <span class="logo-text">Congress<span class="logo-accent">Tracker</span></span>
+    </a>
+    <a href="/?tab=politicians" class="back-link">&#8592; All Members</a>
+  </div>
+</nav>
+
+<main class="container politician-page">
+
+  <!-- ─── PROFILE HEADER ─── -->
+  <div class="profile-header-v2">
+
+    <!-- Left: photo + status -->
+    <div class="profile-left">
+      <div class="profile-photo-circle rep-border">
+        
+        <img src="https://theunitedstates.io/images/congress/225x275/F000459.jpg" alt="Charles Fleischmann" class="profile-photo-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="profile-photo-fallback-circ" style="display:none">C</div>
+        
+      </div>
+      <div class="profile-status-pill">
+        <span class="status-dot"></span>
+        Active
+      </div>
+      
+    </div>
+
+    <!-- Right: info -->
+    <div class="profile-right">
+      <div class="profile-name-row">
+        <h1 class="profile-name">Charles Fleischmann</h1>
+        <span class="party-badge-lg rep">
+          Republican
+        </span>
+      </div>
+
+      <div class="profile-meta-row">
+        <span class="profile-meta-item">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          house
+        </span>
+        
+        <span class="profile-meta-item">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          TN – District 3
+        </span>
+        
+      </div>
+
+      <!-- Stats strip -->
+      <div class="profile-stats-strip">
+        <div class="pstat">
+          <span class="pstat-val">156</span>
+          <span class="pstat-label">Total Trades</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val">$1,566,500</span>
+          <span class="pstat-label">Total Volume</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val green">78</span>
+          <span class="pstat-label">Buys</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val red">78</span>
+          <span class="pstat-label">Sells</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val">2026-02-23</span>
+          <span class="pstat-label">Last Trade</span>
+        </div>
+        
+        
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val yellow">23.1d</span>
+          <span class="pstat-label">Avg Delay</span>
+        </div>
+        
+      </div>
+
+      <!-- Top tickers -->
+      
+      <div class="profile-tickers-row">
+        <span class="tickers-label">Most traded:</span>
+        
+        <span class="ticker-pill lg">MDYG <small>×8</small></span>
+        
+        <span class="ticker-pill lg">SPDW <small>×8</small></span>
+        
+        <span class="ticker-pill lg">GLDM <small>×8</small></span>
+        
+        <span class="ticker-pill lg">TLH <small>×7</small></span>
+        
+        <span class="ticker-pill lg">HYBB <small>×7</small></span>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- ─── TRADE HISTORY TABLE ─── -->
+  <div class="trades-section">
+    <div class="trades-section-header">
+      <h2>Trade History <span class="trades-count">156</span></h2>
+      
+      <div class="profile-type-summary">
+        <span class="type-badge buy">78 BUY</span>
+        <span class="type-badge sell">78 SELL</span>
+        <span class="buy-pct-pill">50% buy ratio</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="trades-table-wrap" style="max-height: 700px">
+      <table class="trades-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Ticker</th>
+            <th>Asset</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Filing Delay</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td class="muted">2026-02-23</td>
+            <td><strong class="ticker">ACN</strong></td>
+            <td class="muted asset-cell" title="Accenture PLC">
+              Accenture PLC
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">25d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-02-20</td>
+            <td><strong class="ticker">ADBE</strong></td>
+            <td class="muted asset-cell" title="Adobe Inc">
+              Adobe Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-02-20</td>
+            <td><strong class="ticker">PYPL</strong></td>
+            <td class="muted asset-cell" title="PayPal Holdings Inc">
+              PayPal Holdings Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-02-20</td>
+            <td><strong class="ticker">PINS</strong></td>
+            <td class="muted asset-cell" title="Pinterest Inc">
+              Pinterest Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-02-20</td>
+            <td><strong class="ticker">NOW</strong></td>
+            <td class="muted asset-cell" title="ServiceNow Inc">
+              ServiceNow Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-02-20</td>
+            <td><strong class="ticker">UNH</strong></td>
+            <td class="muted asset-cell" title="Unitedhealth Group Inc">
+              Unitedhealth Group Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-02-20</td>
+            <td><strong class="ticker">EEFT</strong></td>
+            <td class="muted asset-cell" title="Euronet Worldwide Inc">
+              Euronet Worldwide Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-01-28</td>
+            <td><strong class="ticker">SPYV</strong></td>
+            <td class="muted asset-cell" title="SPDR Series Trust - SPDR Portfolio S&amp;P 500 Value ETF">
+              SPDR Series Trust - SPDR Portfolio …
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">12d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-01-28</td>
+            <td><strong class="ticker">GLDM</strong></td>
+            <td class="muted asset-cell" title="SPDR GOLD MINISHARES TR">
+              SPDR GOLD MINISHARES TR
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">12d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-01-28</td>
+            <td><strong class="ticker">MDYV</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 400 Mid Cap Value ETF">
+              SPDR S&amp;P 400 Mid Cap Value ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">12d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-01-28</td>
+            <td><strong class="ticker">MDYG</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 400 Mid Cap Growth ETF">
+              SPDR S&amp;P 400 Mid Cap Growth ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">12d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-01-28</td>
+            <td><strong class="ticker">GDX</strong></td>
+            <td class="muted asset-cell" title="VanEck Vectors ETF Trust VanEck Vectors Gold Miners ETF">
+              VanEck Vectors ETF Trust VanEck Vec…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">12d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-01-28</td>
+            <td><strong class="ticker">SPMB</strong></td>
+            <td class="muted asset-cell" title="STATE STREET SPDR MOT BKD BD">
+              STATE STREET SPDR MOT BKD BD
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">12d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-01-28</td>
+            <td><strong class="ticker">REGL</strong></td>
+            <td class="muted asset-cell" title="Proshares Trust - ProShares S&amp;P MidCap 400 Dividend Aristocrats ETF">
+              Proshares Trust - ProShares S&amp;P Mid…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">12d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-01-28</td>
+            <td><strong class="ticker">PICK</strong></td>
+            <td class="muted asset-cell" title="ISHARES MSCI GBL METLS &amp; MNG">
+              ISHARES MSCI GBL METLS &amp; MNG
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">12d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-01-28</td>
+            <td><strong class="ticker">TLH</strong></td>
+            <td class="muted asset-cell" title="iShares 10-20 Year Treasury Bond ETF">
+              iShares 10-20 Year Treasury Bond ET…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">12d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-10-21</td>
+            <td><strong class="ticker">TLH</strong></td>
+            <td class="muted asset-cell" title="iShares 10-20 Year Treasury Bond ETF">
+              iShares 10-20 Year Treasury Bond ET…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-10-21</td>
+            <td><strong class="ticker">IEUR</strong></td>
+            <td class="muted asset-cell" title="iShares Core MSCI Europe ETF">
+              iShares Core MSCI Europe ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-10-21</td>
+            <td><strong class="ticker">HYBB</strong></td>
+            <td class="muted asset-cell" title="ISHARES BB RAT CORP BOND ETF">
+              ISHARES BB RAT CORP BOND ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-10-21</td>
+            <td><strong class="ticker">SPDW</strong></td>
+            <td class="muted asset-cell" title="SPDR Portfolio Developed World ex-US ETF">
+              SPDR Portfolio Developed World ex-U…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-10-21</td>
+            <td><strong class="ticker">SPYG</strong></td>
+            <td class="muted asset-cell" title="SPDR Portfolio S&amp;P 500 Growth ETF">
+              SPDR Portfolio S&amp;P 500 Growth ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-10-21</td>
+            <td><strong class="ticker">MDY</strong></td>
+            <td class="muted asset-cell" title="SPDR MidCap 400 ETF Trust">
+              SPDR MidCap 400 ETF Trust
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-10-21</td>
+            <td><strong class="ticker">GLDM</strong></td>
+            <td class="muted asset-cell" title="SPDR GOLD MINISHARES TR">
+              SPDR GOLD MINISHARES TR
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-07-17</td>
+            <td><strong class="ticker">SPDW</strong></td>
+            <td class="muted asset-cell" title="SPDR Portfolio Developed World ex-US ETF">
+              SPDR Portfolio Developed World ex-U…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">33d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-07-17</td>
+            <td><strong class="ticker">MDYV</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 400 MID CAP VALUE ETF">
+              SPDR S&amp;P 400 MID CAP VALUE ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">33d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-07-17</td>
+            <td><strong class="ticker">MDYG</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 400 Mid Cap Growth ETF">
+              SPDR S&amp;P 400 Mid Cap Growth ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">33d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-07-17</td>
+            <td><strong class="ticker">SPYG</strong></td>
+            <td class="muted asset-cell" title="SPDR Portfolio S&amp;P 500 Growth ETF">
+              SPDR Portfolio S&amp;P 500 Growth ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">33d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-07-17</td>
+            <td><strong class="ticker">SPMB</strong></td>
+            <td class="muted asset-cell" title="STATE STREET SPDR MOT BKD BD">
+              STATE STREET SPDR MOT BKD BD
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">33d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-07-17</td>
+            <td><strong class="ticker">XLP</strong></td>
+            <td class="muted asset-cell" title="The Consumer Staples Select Sector SPDR Fund">
+              The Consumer Staples Select Sector …
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">33d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-07-17</td>
+            <td><strong class="ticker">HYBB</strong></td>
+            <td class="muted asset-cell" title="ISHARES BB RAT CORP BOND ETF">
+              ISHARES BB RAT CORP BOND ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">33d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-07-17</td>
+            <td><strong class="ticker">IEI</strong></td>
+            <td class="muted asset-cell" title="iShares 3-7 Year Treasury Bond ETF">
+              iShares 3-7 Year Treasury Bond ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">33d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-07-17</td>
+            <td><strong class="ticker">TLH</strong></td>
+            <td class="muted asset-cell" title="iShares 10-20 Year Treasury Bond ETF">
+              iShares 10-20 Year Treasury Bond ET…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">33d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-07-17</td>
+            <td><strong class="ticker">FXF</strong></td>
+            <td class="muted asset-cell" title="INVESCO CURRENCYSHARES SWISS FRANC TRUST">
+              INVESCO CURRENCYSHARES SWISS FRANC …
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">33d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-07-17</td>
+            <td><strong class="ticker">AVDV</strong></td>
+            <td class="muted asset-cell" title="AVANTIS INTERNATIONAL SMALL CAP VALUE ETF">
+              AVANTIS INTERNATIONAL SMALL CAP VAL…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">33d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-07-17</td>
+            <td><strong class="ticker">IEUR</strong></td>
+            <td class="muted asset-cell" title="iShares Core MSCI Europe ETF">
+              iShares Core MSCI Europe ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">33d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">MDYV</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 400 Mid Cap Value ETF">
+              SPDR S&amp;P 400 Mid Cap Value ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">SPYG</strong></td>
+            <td class="muted asset-cell" title="SPDR Portfolio S&amp;P 500 Growth ETF">
+              SPDR Portfolio S&amp;P 500 Growth ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">SPYV</strong></td>
+            <td class="muted asset-cell" title="SPDR Series Trust - SPDR Portfolio S&amp;P 500 Value ETF">
+              SPDR Series Trust - SPDR Portfolio …
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">SDY</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P Dividend ETF">
+              SPDR S&amp;P Dividend ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">MDYG</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 400 Mid Cap Growth ETF">
+              SPDR S&amp;P 400 Mid Cap Growth ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">XLP</strong></td>
+            <td class="muted asset-cell" title="The Consumer Staples Select Sector SPDR Fund">
+              The Consumer Staples Select Sector …
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">SPHY</strong></td>
+            <td class="muted asset-cell" title="SPDR PORTFOLIO HGH YD BD ETF">
+              SPDR PORTFOLIO HGH YD BD ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">SLYG</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 600 Small Cap Growth ETF">
+              SPDR S&amp;P 600 Small Cap Growth ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">GLDM</strong></td>
+            <td class="muted asset-cell" title="SPDR GOLD MINISHARES TR">
+              SPDR GOLD MINISHARES TR
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">TROW</strong></td>
+            <td class="muted asset-cell" title="T. Rowe Price Group Inc">
+              T. Rowe Price Group Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">TSCO</strong></td>
+            <td class="muted asset-cell" title="Tractor Supply Co">
+              Tractor Supply Co
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">SLYV</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 600 Small Cap Value ETF">
+              SPDR S&amp;P 600 Small Cap Value ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">SPMB</strong></td>
+            <td class="muted asset-cell" title="STATE STREET SPDR MOT BKD BD">
+              STATE STREET SPDR MOT BKD BD
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">SPDW</strong></td>
+            <td class="muted asset-cell" title="SPDR Portfolio Developed World ex-US ETF">
+              SPDR Portfolio Developed World ex-U…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">FXF</strong></td>
+            <td class="muted asset-cell" title="INVESCO CURRENCYSHARES SWISS FRANC TRUST">
+              INVESCO CURRENCYSHARES SWISS FRANC …
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">HACK</strong></td>
+            <td class="muted asset-cell" title="ETF Managers Trust - ETFMG Prime Cyber Security ETF">
+              ETF Managers Trust - ETFMG Prime Cy…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">SPY</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 500 ETF Trust">
+              SPDR S&amp;P 500 ETF Trust
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">XMHQ</strong></td>
+            <td class="muted asset-cell" title="INVESCO S&amp;P MDCP QUALITY ETF">
+              INVESCO S&amp;P MDCP QUALITY ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">XSHQ</strong></td>
+            <td class="muted asset-cell" title="INVESCO S&amp;P SMALLCAP QUALITY ETF">
+              INVESCO S&amp;P SMALLCAP QUALITY ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">URA</strong></td>
+            <td class="muted asset-cell" title="Global X Uranium ETF">
+              Global X Uranium ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">TLH</strong></td>
+            <td class="muted asset-cell" title="iShares 10-20 Year Treasury Bond ETF">
+              iShares 10-20 Year Treasury Bond ET…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">IEI</strong></td>
+            <td class="muted asset-cell" title="iShares 3-7 Year Treasury Bond ETF">
+              iShares 3-7 Year Treasury Bond ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">HYBB</strong></td>
+            <td class="muted asset-cell" title="ISHARES BB RAT CORP BOND ETF">
+              ISHARES BB RAT CORP BOND ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">ZROZ</strong></td>
+            <td class="muted asset-cell" title="PIMCO 25 YR ZERO CPN US ETF">
+              PIMCO 25 YR ZERO CPN US ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-16</td>
+            <td><strong class="ticker">REGL</strong></td>
+            <td class="muted asset-cell" title="Proshares Trust - ProShares S&amp;P MidCap 400 Dividend Aristocrats ETF">
+              Proshares Trust - ProShares S&amp;P Mid…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-28</td>
+            <td><strong class="ticker">SLYG</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 600 Small Cap Growth ETF">
+              SPDR S&amp;P 600 Small Cap Growth ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-28</td>
+            <td><strong class="ticker">ADBE</strong></td>
+            <td class="muted asset-cell" title="Adobe Inc">
+              Adobe Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-28</td>
+            <td><strong class="ticker">GLDM</strong></td>
+            <td class="muted asset-cell" title="SPDR GOLD MINISHARES TR">
+              SPDR GOLD MINISHARES TR
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-28</td>
+            <td><strong class="ticker">XLE</strong></td>
+            <td class="muted asset-cell" title="The Select Sector SPDR Trust - The Energy Select Sector SPDR Fund">
+              The Select Sector SPDR Trust - The …
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-28</td>
+            <td><strong class="ticker">MDYG</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 400 Mid Cap Growth ETF">
+              SPDR S&amp;P 400 Mid Cap Growth ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-28</td>
+            <td><strong class="ticker">SPYV</strong></td>
+            <td class="muted asset-cell" title="SPDR Series Trust - SPDR Portfolio S&amp;P 500 Value ETF">
+              SPDR Series Trust - SPDR Portfolio …
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-28</td>
+            <td><strong class="ticker">SPYG</strong></td>
+            <td class="muted asset-cell" title="SPDR Portfolio S&amp;P 500 Growth ETF">
+              SPDR Portfolio S&amp;P 500 Growth ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-28</td>
+            <td><strong class="ticker">SPMB</strong></td>
+            <td class="muted asset-cell" title="STATE STREET SPDR MOT BKD BD">
+              STATE STREET SPDR MOT BKD BD
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-28</td>
+            <td><strong class="ticker">SLYV</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 600 Small Cap Value ETF">
+              SPDR S&amp;P 600 Small Cap Value ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-28</td>
+            <td><strong class="ticker">VZ</strong></td>
+            <td class="muted asset-cell" title="Verizon Communications Inc">
+              Verizon Communications Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-28</td>
+            <td><strong class="ticker">SPDW</strong></td>
+            <td class="muted asset-cell" title="SPDR Portfolio Developed World ex-US ETF">
+              SPDR Portfolio Developed World ex-U…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-28</td>
+            <td><strong class="ticker">ZROZ</strong></td>
+            <td class="muted asset-cell" title="PIMCO 25 YR ZERO CPN US ETF">
+              PIMCO 25 YR ZERO CPN US ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-28</td>
+            <td><strong class="ticker">ITA</strong></td>
+            <td class="muted asset-cell" title="iShares U.S. Aerospace &amp; Defense ETF">
+              iShares U.S. Aerospace &amp; Defense ET…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-28</td>
+            <td><strong class="ticker">TLH</strong></td>
+            <td class="muted asset-cell" title="iShares 10-20 Year Treasury Bond ETF">
+              iShares 10-20 Year Treasury Bond ET…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-28</td>
+            <td><strong class="ticker">IGSB</strong></td>
+            <td class="muted asset-cell" title="iShares 1-5 Year Investment Grade Corp Bond ETF">
+              iShares 1-5 Year Investment Grade C…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-28</td>
+            <td><strong class="ticker">URA</strong></td>
+            <td class="muted asset-cell" title="Global X Uranium ETF">
+              Global X Uranium ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-28</td>
+            <td><strong class="ticker">FLJP</strong></td>
+            <td class="muted asset-cell" title="FRANKLIN FTSE JAPAN ETF">
+              FRANKLIN FTSE JAPAN ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-28</td>
+            <td><strong class="ticker">IBUY</strong></td>
+            <td class="muted asset-cell" title="Amplify Online Retail ETF">
+              Amplify Online Retail ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-28</td>
+            <td><strong class="ticker">SPY</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 500 ETF Trust">
+              SPDR S&amp;P 500 ETF Trust
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-22</td>
+            <td><strong class="ticker">ZROZ</strong></td>
+            <td class="muted asset-cell" title="PIMCO 25 YR ZERO CPN US ETF">
+              PIMCO 25 YR ZERO CPN US ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-22</td>
+            <td><strong class="ticker">GLDM</strong></td>
+            <td class="muted asset-cell" title="SPDR GOLD MINISHARES TR">
+              SPDR GOLD MINISHARES TR
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-22</td>
+            <td><strong class="ticker">SPMB</strong></td>
+            <td class="muted asset-cell" title="STATE STREET SPDR MOT BKD BD">
+              STATE STREET SPDR MOT BKD BD
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-22</td>
+            <td><strong class="ticker">SPDW</strong></td>
+            <td class="muted asset-cell" title="SPDR Portfolio Developed World ex-US ETF">
+              SPDR Portfolio Developed World ex-U…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-22</td>
+            <td><strong class="ticker">SHY</strong></td>
+            <td class="muted asset-cell" title="iShares 1-3 Year Treasury Bond ETF">
+              iShares 1-3 Year Treasury Bond ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-22</td>
+            <td><strong class="ticker">IEI</strong></td>
+            <td class="muted asset-cell" title="iShares 3-7 Year Treasury Bond ETF">
+              iShares 3-7 Year Treasury Bond ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-22</td>
+            <td><strong class="ticker">IGSB</strong></td>
+            <td class="muted asset-cell" title="iShares 1-5 Year Investment Grade Corp Bond ETF">
+              iShares 1-5 Year Investment Grade C…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-22</td>
+            <td><strong class="ticker">FLJP</strong></td>
+            <td class="muted asset-cell" title="FRANKLIN FTSE JAPAN ETF">
+              FRANKLIN FTSE JAPAN ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-22</td>
+            <td><strong class="ticker">XONE</strong></td>
+            <td class="muted asset-cell" title="BONDBLOXX B O Y T D US T ETF">
+              BONDBLOXX B O Y T D US T ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-07-16</td>
+            <td><strong class="ticker">CALF</strong></td>
+            <td class="muted asset-cell" title="PACER US SM CP CSH COWS ETF">
+              PACER US SM CP CSH COWS ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-07-16</td>
+            <td><strong class="ticker">SPHY</strong></td>
+            <td class="muted asset-cell" title="SPDR PORTFOLIO HGH YD BD ETF">
+              SPDR PORTFOLIO HGH YD BD ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-07-16</td>
+            <td><strong class="ticker">MDYG</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 400 Mid Cap Growth ETF">
+              SPDR S&amp;P 400 Mid Cap Growth ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-07-16</td>
+            <td><strong class="ticker">SPYV</strong></td>
+            <td class="muted asset-cell" title="SPDR Series Trust - SPDR Portfolio S&amp;P 500 Value ETF">
+              SPDR Series Trust - SPDR Portfolio …
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-07-16</td>
+            <td><strong class="ticker">SPYG</strong></td>
+            <td class="muted asset-cell" title="SPDR Portfolio S&amp;P 500 Growth ETF">
+              SPDR Portfolio S&amp;P 500 Growth ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-07-16</td>
+            <td><strong class="ticker">SLYG</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 600 Small Cap Growth ETF">
+              SPDR S&amp;P 600 Small Cap Growth ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-07-16</td>
+            <td><strong class="ticker">IGSB</strong></td>
+            <td class="muted asset-cell" title="iShares 1-5 Year Investment Grade Corp Bond ETF">
+              iShares 1-5 Year Investment Grade C…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-07-16</td>
+            <td><strong class="ticker">XSHQ</strong></td>
+            <td class="muted asset-cell" title="INVESCO S&amp;P SMALLCAP QUALITY ETF">
+              INVESCO S&amp;P SMALLCAP QUALITY ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-07-16</td>
+            <td><strong class="ticker">XMHQ</strong></td>
+            <td class="muted asset-cell" title="INVESCO S&amp;P MDCP QUALITY ETF">
+              INVESCO S&amp;P MDCP QUALITY ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-07-16</td>
+            <td><strong class="ticker">XONE</strong></td>
+            <td class="muted asset-cell" title="BONDBLOXX B O Y T D US T ETF">
+              BONDBLOXX B O Y T D US T ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-07-16</td>
+            <td><strong class="ticker">HYBB</strong></td>
+            <td class="muted asset-cell" title="ISHARES BB RAT CORP BOND ETF">
+              ISHARES BB RAT CORP BOND ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-07-09</td>
+            <td><strong class="ticker">DOCU</strong></td>
+            <td class="muted asset-cell" title="DocuSign Inc">
+              DocuSign Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">38d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-07-09</td>
+            <td><strong class="ticker">SNOW</strong></td>
+            <td class="muted asset-cell" title="Snowflake Inc">
+              Snowflake Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">38d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-07-08</td>
+            <td><strong class="ticker">LCGFX</strong></td>
+            <td class="muted asset-cell" title="WILLIAM BLAIR LARGE CAP GROWTH FUND">
+              WILLIAM BLAIR LARGE CAP GROWTH FUND
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">39d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-07-08</td>
+            <td><strong class="ticker">SOLV</strong></td>
+            <td class="muted asset-cell" title="SOLVENTUM CORP">
+              SOLVENTUM CORP
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="red">39d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-04-25</td>
+            <td><strong class="ticker">IGSB</strong></td>
+            <td class="muted asset-cell" title="iShares 1-5 Year Investment Grade Corp Bond ETF">
+              iShares 1-5 Year Investment Grade C…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-04-25</td>
+            <td><strong class="ticker">SPDW</strong></td>
+            <td class="muted asset-cell" title="SPDR Portfolio Developed World ex-US ETF">
+              SPDR Portfolio Developed World ex-U…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-04-25</td>
+            <td><strong class="ticker">GLDM</strong></td>
+            <td class="muted asset-cell" title="SPDR GOLD MINISHARES TR">
+              SPDR GOLD MINISHARES TR
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-04-25</td>
+            <td><strong class="ticker">MDYV</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 400 Mid Cap Value ETF">
+              SPDR S&amp;P 400 Mid Cap Value ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-04-25</td>
+            <td><strong class="ticker">MDYG</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 400 Mid Cap Growth ETF">
+              SPDR S&amp;P 400 Mid Cap Growth ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-04-25</td>
+            <td><strong class="ticker">XMHQ</strong></td>
+            <td class="muted asset-cell" title="INVESCO S&amp;P MDCP QUALITY ETF">
+              INVESCO S&amp;P MDCP QUALITY ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-04-25</td>
+            <td><strong class="ticker">CALF</strong></td>
+            <td class="muted asset-cell" title="PACER US SM CP CSH COWS ETF">
+              PACER US SM CP CSH COWS ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-04-25</td>
+            <td><strong class="ticker">HYBB</strong></td>
+            <td class="muted asset-cell" title="ISHARES BB RAT CORP BOND ETF">
+              ISHARES BB RAT CORP BOND ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-04-25</td>
+            <td><strong class="ticker">SHY</strong></td>
+            <td class="muted asset-cell" title="iShares 1-3 Year Treasury Bond ETF">
+              iShares 1-3 Year Treasury Bond ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-04-25</td>
+            <td><strong class="ticker">FLJP</strong></td>
+            <td class="muted asset-cell" title="FRANKLIN FTSE JAPAN ETF">
+              FRANKLIN FTSE JAPAN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-26</td>
+            <td><strong class="ticker">VCLT</strong></td>
+            <td class="muted asset-cell" title="Vanguard Scottsdale Funds Vanguard Long-Term Corporate Bond ETF">
+              Vanguard Scottsdale Funds Vanguard …
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-26</td>
+            <td><strong class="ticker">XLI</strong></td>
+            <td class="muted asset-cell" title="The Industrial Select Sector SPDR Fund">
+              The Industrial Select Sector SPDR F…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-26</td>
+            <td><strong class="ticker">SPYV</strong></td>
+            <td class="muted asset-cell" title="SPDR Series Trust - SPDR Portfolio S&amp;P 500 Value ETF">
+              SPDR Series Trust - SPDR Portfolio …
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-26</td>
+            <td><strong class="ticker">GLDM</strong></td>
+            <td class="muted asset-cell" title="SPDR GOLD MINISHARES TR">
+              SPDR GOLD MINISHARES TR
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-26</td>
+            <td><strong class="ticker">XME</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P Metals &amp; Mining ETF">
+              SPDR S&amp;P Metals &amp; Mining ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-26</td>
+            <td><strong class="ticker">TLH</strong></td>
+            <td class="muted asset-cell" title="iShares 10-20 Year Treasury Bond ETF">
+              iShares 10-20 Year Treasury Bond ET…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-26</td>
+            <td><strong class="ticker">SPYG</strong></td>
+            <td class="muted asset-cell" title="SPDR Portfolio S&amp;P 500 Growth ETF">
+              SPDR Portfolio S&amp;P 500 Growth ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-26</td>
+            <td><strong class="ticker">CALF</strong></td>
+            <td class="muted asset-cell" title="PACER US SM CP CSH COWS ETF">
+              PACER US SM CP CSH COWS ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-26</td>
+            <td><strong class="ticker">HYBB</strong></td>
+            <td class="muted asset-cell" title="ISHARES BB RAT CORP BOND ETF">
+              ISHARES BB RAT CORP BOND ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-26</td>
+            <td><strong class="ticker">IBDP</strong></td>
+            <td class="muted asset-cell" title="iShares iBonds Dec 2024 Term Corporate ETF">
+              iShares iBonds Dec 2024 Term Corpor…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-26</td>
+            <td><strong class="ticker">SLYG</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 600 Small Cap Growth ETF">
+              SPDR S&amp;P 600 Small Cap Growth ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">14d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-20</td>
+            <td><strong class="ticker">TLH</strong></td>
+            <td class="muted asset-cell" title="iShares 10-20 Year Treasury Bond ETF">
+              iShares 10-20 Year Treasury Bond ET…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-20</td>
+            <td><strong class="ticker">XONE</strong></td>
+            <td class="muted asset-cell" title="BONDBLOXX B O Y T D US T ETF">
+              BONDBLOXX B O Y T D US T ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-20</td>
+            <td><strong class="ticker">FLJP</strong></td>
+            <td class="muted asset-cell" title="FRANKLIN FTSE JAPAN ETF">
+              FRANKLIN FTSE JAPAN ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-20</td>
+            <td><strong class="ticker">FINX</strong></td>
+            <td class="muted asset-cell" title="Global X FinTech ETF">
+              Global X FinTech ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-20</td>
+            <td><strong class="ticker">PDBC</strong></td>
+            <td class="muted asset-cell" title="Invesco Optimum Yield Diversified Commodity Strategy No K-1 ETF">
+              Invesco Optimum Yield Diversified C…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-20</td>
+            <td><strong class="ticker">XMHQ</strong></td>
+            <td class="muted asset-cell" title="INVESCO S&amp;P MDCP QUALITY ETF">
+              INVESCO S&amp;P MDCP QUALITY ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-20</td>
+            <td><strong class="ticker">SPDW</strong></td>
+            <td class="muted asset-cell" title="SPDR Portfolio Developed World ex-US ETF">
+              SPDR Portfolio Developed World ex-U…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-20</td>
+            <td><strong class="ticker">CALF</strong></td>
+            <td class="muted asset-cell" title="PACER US SM CP CSH COWS ETF">
+              PACER US SM CP CSH COWS ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-20</td>
+            <td><strong class="ticker">SLYG</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 600 Small Cap Growth ETF">
+              SPDR S&amp;P 600 Small Cap Growth ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-20</td>
+            <td><strong class="ticker">MDYG</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 400 Mid Cap Growth ETF">
+              SPDR S&amp;P 400 Mid Cap Growth ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-20</td>
+            <td><strong class="ticker">MDYV</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 400 Mid Cap Value ETF">
+              SPDR S&amp;P 400 Mid Cap Value ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-20</td>
+            <td><strong class="ticker">VCSH</strong></td>
+            <td class="muted asset-cell" title="Vanguard Scottsdale Funds Vanguard Short-Term Corporate Bond ETF">
+              Vanguard Scottsdale Funds Vanguard …
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-20</td>
+            <td><strong class="ticker">GLDM</strong></td>
+            <td class="muted asset-cell" title="SPDR GOLD MINISHARES TR">
+              SPDR GOLD MINISHARES TR
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-07-21</td>
+            <td><strong class="ticker">SHY</strong></td>
+            <td class="muted asset-cell" title="iShares 1-3 Year Treasury Bond ETF">
+              iShares 1-3 Year Treasury Bond ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-07-21</td>
+            <td><strong class="ticker">SPDW</strong></td>
+            <td class="muted asset-cell" title="SPDR Portfolio Developed World ex-US ETF">
+              SPDR Portfolio Developed World ex-U…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-07-21</td>
+            <td><strong class="ticker">XONE</strong></td>
+            <td class="muted asset-cell" title="BONDBLOXX B O Y T D US T ETF">
+              BONDBLOXX B O Y T D US T ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-07-21</td>
+            <td><strong class="ticker">XMHQ</strong></td>
+            <td class="muted asset-cell" title="INVESCO S&amp;P MDCP QUALITY ETF">
+              INVESCO S&amp;P MDCP QUALITY ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-07-21</td>
+            <td><strong class="ticker">FLJP</strong></td>
+            <td class="muted asset-cell" title="FRANKLIN FTSE JAPAN ETF">
+              FRANKLIN FTSE JAPAN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-26</td>
+            <td><strong class="ticker">PDBC</strong></td>
+            <td class="muted asset-cell" title="Invesco Optimum Yield Diversified Commodity Strategy No K-1 ETF">
+              Invesco Optimum Yield Diversified C…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-26</td>
+            <td><strong class="ticker">XMHQ</strong></td>
+            <td class="muted asset-cell" title="INVESCO S&amp;P MDCP QUALITY ETF">
+              INVESCO S&amp;P MDCP QUALITY ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-26</td>
+            <td><strong class="ticker">HYBB</strong></td>
+            <td class="muted asset-cell" title="ISHARES BB RAT CORP BOND ETF">
+              ISHARES BB RAT CORP BOND ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-26</td>
+            <td><strong class="ticker">CALF</strong></td>
+            <td class="muted asset-cell" title="PACER US SM CP CSH COWS ETF">
+              PACER US SM CP CSH COWS ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-26</td>
+            <td><strong class="ticker">SLYG</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 600 Small Cap Growth ETF">
+              SPDR S&amp;P 600 Small Cap Growth ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-26</td>
+            <td><strong class="ticker">MDYG</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 400 Mid Cap Growth ETF">
+              SPDR S&amp;P 400 Mid Cap Growth ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-26</td>
+            <td><strong class="ticker">MDYV</strong></td>
+            <td class="muted asset-cell" title="SPDR S&amp;P 400 Mid Cap Value ETF">
+              SPDR S&amp;P 400 Mid Cap Value ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-10</td>
+            <td><strong class="ticker">GRMN</strong></td>
+            <td class="muted asset-cell" title="Garmin Ltd">
+              Garmin Ltd
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">29d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-10</td>
+            <td><strong class="ticker">DKNG</strong></td>
+            <td class="muted asset-cell" title="DraftKings Inc">
+              DraftKings Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">29d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-10</td>
+            <td><strong class="ticker">PNFP</strong></td>
+            <td class="muted asset-cell" title="Pinnacle Financial Partners Inc">
+              Pinnacle Financial Partners Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">29d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-10</td>
+            <td><strong class="ticker">TROW</strong></td>
+            <td class="muted asset-cell" title="T. Rowe Price Group Inc">
+              T. Rowe Price Group Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">29d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-10</td>
+            <td><strong class="ticker">TCEHY</strong></td>
+            <td class="muted asset-cell" title="Tencent Holdings LTD">
+              Tencent Holdings LTD
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">29d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-10</td>
+            <td><strong class="ticker">MMM</strong></td>
+            <td class="muted asset-cell" title="3M Co">
+              3M Co
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">29d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-04-10</td>
+            <td><strong class="ticker">UPWK</strong></td>
+            <td class="muted asset-cell" title="Upwork Inc">
+              Upwork Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">—</td>
+            <td>
+              
+              <span class="yellow">29d</span>
+              
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>Data: Official House Clerk PTR disclosures | InsiderFinance | Quiver Quantitative</p>
+  </div>
+</footer>
+
+</body>
+</html>

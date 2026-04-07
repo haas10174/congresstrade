@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Richard W. Allen | Congress Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo">
+      <span class="logo-icon">C</span>
+      <span class="logo-text">Congress<span class="logo-accent">Tracker</span></span>
+    </a>
+    <a href="/?tab=politicians" class="back-link">&#8592; All Members</a>
+  </div>
+</nav>
+
+<main class="container politician-page">
+
+  <!-- ─── PROFILE HEADER ─── -->
+  <div class="profile-header-v2">
+
+    <!-- Left: photo + status -->
+    <div class="profile-left">
+      <div class="profile-photo-circle rep-border">
+        
+        <img src="https://theunitedstates.io/images/congress/225x275/A000372.jpg" alt="Richard W. Allen" class="profile-photo-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="profile-photo-fallback-circ" style="display:none">R</div>
+        
+      </div>
+      <div class="profile-status-pill">
+        <span class="status-dot"></span>
+        Active
+      </div>
+      
+    </div>
+
+    <!-- Right: info -->
+    <div class="profile-right">
+      <div class="profile-name-row">
+        <h1 class="profile-name">Richard W. Allen</h1>
+        <span class="party-badge-lg rep">
+          Republican
+        </span>
+      </div>
+
+      <div class="profile-meta-row">
+        <span class="profile-meta-item">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Representatives
+        </span>
+        
+      </div>
+
+      <!-- Stats strip -->
+      <div class="profile-stats-strip">
+        <div class="pstat">
+          <span class="pstat-val">17</span>
+          <span class="pstat-label">Total Trades</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val">$146,013</span>
+          <span class="pstat-label">Total Volume</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val green">10</span>
+          <span class="pstat-label">Buys</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val red">7</span>
+          <span class="pstat-label">Sells</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val">2026-02-19</span>
+          <span class="pstat-label">Last Trade</span>
+        </div>
+        
+        
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val yellow">26.1d</span>
+          <span class="pstat-label">Avg Delay</span>
+        </div>
+        
+      </div>
+
+      <!-- Top tickers -->
+      
+      <div class="profile-tickers-row">
+        <span class="tickers-label">Most traded:</span>
+        
+        <span class="ticker-pill lg">INTU <small>×3</small></span>
+        
+        <span class="ticker-pill lg">ACN <small>×2</small></span>
+        
+        <span class="ticker-pill lg">TSM <small>×1</small></span>
+        
+        <span class="ticker-pill lg">SPGI <small>×1</small></span>
+        
+        <span class="ticker-pill lg">PAYX <small>×1</small></span>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- ─── TRADE HISTORY TABLE ─── -->
+  <div class="trades-section">
+    <div class="trades-section-header">
+      <h2>Trade History <span class="trades-count">17</span></h2>
+      
+      <div class="profile-type-summary">
+        <span class="type-badge buy">10 BUY</span>
+        <span class="type-badge sell">7 SELL</span>
+        <span class="buy-pct-pill">59% buy ratio</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="trades-table-wrap" style="max-height: 700px">
+      <table class="trades-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Ticker</th>
+            <th>Asset</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Filing Delay</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td class="muted">2026-02-19</td>
+            <td><strong class="ticker">KMI</strong></td>
+            <td class="muted asset-cell" title="">
+              —
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-02-19</td>
+            <td><strong class="ticker">TSM</strong></td>
+            <td class="muted asset-cell" title="">
+              —
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-02-19</td>
+            <td><strong class="ticker">INTU</strong></td>
+            <td class="muted asset-cell" title="">
+              —
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-02-18</td>
+            <td><strong class="ticker">INTU</strong></td>
+            <td class="muted asset-cell" title="">
+              —
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-01-14</td>
+            <td><strong class="ticker">SPGI</strong></td>
+            <td class="muted asset-cell" title="">
+              —
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="yellow">34d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-01-14</td>
+            <td><strong class="ticker">PAYX</strong></td>
+            <td class="muted asset-cell" title="">
+              —
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="yellow">34d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-01-14</td>
+            <td><strong class="ticker">AWK</strong></td>
+            <td class="muted asset-cell" title="">
+              —
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="yellow">34d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-12-12</td>
+            <td><strong class="ticker">FERG</strong></td>
+            <td class="muted asset-cell" title="Ferguson PLC">
+              Ferguson PLC
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="red">35d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-10-10</td>
+            <td><strong class="ticker">CHD</strong></td>
+            <td class="muted asset-cell" title="Church &amp; Dwight Co Inc">
+              Church &amp; Dwight Co Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="red">35d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-12</td>
+            <td><strong class="ticker">ACN</strong></td>
+            <td class="muted asset-cell" title="Accenture PLC">
+              Accenture PLC
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">26d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-08-19</td>
+            <td><strong class="ticker">ACN</strong></td>
+            <td class="muted asset-cell" title="Accenture PLC">
+              Accenture PLC
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-08-19</td>
+            <td><strong class="ticker">ATO</strong></td>
+            <td class="muted asset-cell" title="Atmos Energy Corp">
+              Atmos Energy Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-07-10</td>
+            <td><strong class="ticker">SCHW</strong></td>
+            <td class="muted asset-cell" title="Charles Schwab Corporation">
+              Charles Schwab Corporation
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 -</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-06-20</td>
+            <td><strong class="ticker">INTU</strong></td>
+            <td class="muted asset-cell" title="Intuit Inc. - Common Stock">
+              Intuit Inc. - Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-05-16</td>
+            <td><strong class="ticker">NFLX</strong></td>
+            <td class="muted asset-cell" title="Netflix, Inc. - Common Stock">
+              Netflix, Inc. - Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 -</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-17</td>
+            <td><strong class="ticker">AZO</strong></td>
+            <td class="muted asset-cell" title="AutoZone, Inc. Common Stock">
+              AutoZone, Inc. Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 -</td>
+            <td>
+              
+              <span class="green">18d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-12-12</td>
+            <td><strong class="ticker">ROL</strong></td>
+            <td class="muted asset-cell" title="Rollins, Inc. Common Stock">
+              Rollins, Inc. Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 -</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>Data: Official House Clerk PTR disclosures | InsiderFinance | Quiver Quantitative</p>
+  </div>
+</footer>
+
+</body>
+</html>

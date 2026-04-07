@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John W. Hickenlooper | Congress Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo">
+      <span class="logo-icon">C</span>
+      <span class="logo-text">Congress<span class="logo-accent">Tracker</span></span>
+    </a>
+    <a href="/?tab=politicians" class="back-link">&#8592; All Members</a>
+  </div>
+</nav>
+
+<main class="container politician-page">
+
+  <!-- ─── PROFILE HEADER ─── -->
+  <div class="profile-header-v2">
+
+    <!-- Left: photo + status -->
+    <div class="profile-left">
+      <div class="profile-photo-circle dem-border">
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/John_Hickenlooper%2C_official_portrait%2C_117th_Congress.jpeg/250px-John_Hickenlooper%2C_official_portrait%2C_117th_Congress.jpeg" alt="John W. Hickenlooper" class="profile-photo-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="profile-photo-fallback-circ" style="display:none">J</div>
+        
+      </div>
+      <div class="profile-status-pill">
+        <span class="status-dot"></span>
+        Active
+      </div>
+      
+    </div>
+
+    <!-- Right: info -->
+    <div class="profile-right">
+      <div class="profile-name-row">
+        <h1 class="profile-name">John W. Hickenlooper</h1>
+        <span class="party-badge-lg dem">
+          Democrat
+        </span>
+      </div>
+
+      <div class="profile-meta-row">
+        <span class="profile-meta-item">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Senate
+        </span>
+        
+        <span class="profile-meta-item">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          CO
+        </span>
+        
+      </div>
+
+      <!-- Stats strip -->
+      <div class="profile-stats-strip">
+        <div class="pstat">
+          <span class="pstat-val">36</span>
+          <span class="pstat-label">Total Trades</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val">$3,496,036</span>
+          <span class="pstat-label">Total Volume</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val green">9</span>
+          <span class="pstat-label">Buys</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val red">27</span>
+          <span class="pstat-label">Sells</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val">2026-02-05</span>
+          <span class="pstat-label">Last Trade</span>
+        </div>
+        
+        
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val red">39.1d</span>
+          <span class="pstat-label">Avg Delay</span>
+        </div>
+        
+      </div>
+
+      <!-- Top tickers -->
+      
+      <div class="profile-tickers-row">
+        <span class="tickers-label">Most traded:</span>
+        
+        <span class="ticker-pill lg">FWONK <small>×6</small></span>
+        
+        <span class="ticker-pill lg">CMG <small>×4</small></span>
+        
+        <span class="ticker-pill lg">SIRI <small>×3</small></span>
+        
+        <span class="ticker-pill lg">LBRDK <small>×2</small></span>
+        
+        <span class="ticker-pill lg">LBRDA <small>×2</small></span>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- ─── TRADE HISTORY TABLE ─── -->
+  <div class="trades-section">
+    <div class="trades-section-header">
+      <h2>Trade History <span class="trades-count">36</span></h2>
+      
+      <div class="profile-type-summary">
+        <span class="type-badge buy">9 BUY</span>
+        <span class="type-badge sell">27 SELL</span>
+        <span class="buy-pct-pill">25% buy ratio</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="trades-table-wrap" style="max-height: 700px">
+      <table class="trades-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Ticker</th>
+            <th>Asset</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Filing Delay</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td class="muted">2026-02-05</td>
+            <td><strong class="ticker">SIRI</strong></td>
+            <td class="muted asset-cell" title="Sirius XM Holdings Inc">
+              Sirius XM Holdings Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-01-14</td>
+            <td><strong class="ticker">TJX</strong></td>
+            <td class="muted asset-cell" title="The TJX Companies Inc">
+              The TJX Companies Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="yellow">23d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-01-14</td>
+            <td><strong class="ticker">LOW</strong></td>
+            <td class="muted asset-cell" title="Lowe&#39;s Cos Inc">
+              Lowe&#39;s Cos Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="yellow">23d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-01-14</td>
+            <td><strong class="ticker">ETN</strong></td>
+            <td class="muted asset-cell" title="Eaton Corp PLC">
+              Eaton Corp PLC
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="yellow">23d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-01-14</td>
+            <td><strong class="ticker">UBER</strong></td>
+            <td class="muted asset-cell" title="Uber Technologies Inc">
+              Uber Technologies Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="yellow">23d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-12-10</td>
+            <td><strong class="ticker">FWONK</strong></td>
+            <td class="muted asset-cell" title="Formula One Group - The Liberty Media Group">
+              Formula One Group - The Liberty Med…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-02</td>
+            <td><strong class="ticker">INTU</strong></td>
+            <td class="muted asset-cell" title="Intuit Inc">
+              Intuit Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="yellow">34d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-02</td>
+            <td><strong class="ticker">PEP</strong></td>
+            <td class="muted asset-cell" title="PepsiCo Inc">
+              PepsiCo Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="yellow">34d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-02</td>
+            <td><strong class="ticker">PANW</strong></td>
+            <td class="muted asset-cell" title="Palo Alto Networks Inc">
+              Palo Alto Networks Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="yellow">34d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-06-12</td>
+            <td><strong class="ticker">CMG</strong></td>
+            <td class="muted asset-cell" title="Chipotle Mexican Grill Inc">
+              Chipotle Mexican Grill Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="yellow">25d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-05-19</td>
+            <td><strong class="ticker">LBRDA</strong></td>
+            <td class="muted asset-cell" title="Liberty Broadband Corp">
+              Liberty Broadband Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$250,001 - $500,000</td>
+            <td>
+              
+              <span class="yellow">25d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-05-19</td>
+            <td><strong class="ticker">LBRDK</strong></td>
+            <td class="muted asset-cell" title="Liberty Broadband Corporation - Class C Common Sto">
+              Liberty Broadband Corporation - Cla…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$250,001 - $500,000</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-05-09</td>
+            <td><strong class="ticker">FWONK</strong></td>
+            <td class="muted asset-cell" title="Formula One Group - The Liberty Media Group">
+              Formula One Group - The Liberty Med…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$250,001 - $500,000</td>
+            <td>
+              
+              <span class="green">18d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-05-09</td>
+            <td><strong class="ticker">LBRDA</strong></td>
+            <td class="muted asset-cell" title="Liberty Broadband Corp">
+              Liberty Broadband Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="green">18d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-05-09</td>
+            <td><strong class="ticker">LBRDK</strong></td>
+            <td class="muted asset-cell" title="Liberty Broadband Corporation - Class C Common Sto">
+              Liberty Broadband Corporation - Cla…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="green">16d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-25</td>
+            <td><strong class="ticker">SIRI</strong></td>
+            <td class="muted asset-cell" title="Sirius XM Holdings Inc">
+              Sirius XM Holdings Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="yellow">32d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-18</td>
+            <td><strong class="ticker">FWONK</strong></td>
+            <td class="muted asset-cell" title="Formula One Group - The Liberty Media Group">
+              Formula One Group - The Liberty Med…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="yellow">34d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-09-12</td>
+            <td><strong class="ticker">CMG</strong></td>
+            <td class="muted asset-cell" title="Chipotle Mexican Grill">
+              Chipotle Mexican Grill
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="yellow">32d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-09-06</td>
+            <td><strong class="ticker">LSXMK</strong></td>
+            <td class="muted asset-cell" title="Liberty Media Corporation - Series C Liberty Siriu">
+              Liberty Media Corporation - Series …
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="red">38d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-09-06</td>
+            <td><strong class="ticker">LSXMA</strong></td>
+            <td class="muted asset-cell" title="Liberty Media Corp SiriusXM Group">
+              Liberty Media Corp SiriusXM Group
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="red">39d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-08-30</td>
+            <td><strong class="ticker">BATRA</strong></td>
+            <td class="muted asset-cell" title="Liberty Media Corp Braves Group">
+              Liberty Media Corp Braves Group
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-08-30</td>
+            <td><strong class="ticker">BATRK</strong></td>
+            <td class="muted asset-cell" title="Liberty Media Corporation - Series C Liberty Brave">
+              Liberty Media Corporation - Series …
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="green">19d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-08-28</td>
+            <td><strong class="ticker">BATRA</strong></td>
+            <td class="muted asset-cell" title="Liberty Media Corp Braves Group">
+              Liberty Media Corp Braves Group
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-08-28</td>
+            <td><strong class="ticker">BATRK</strong></td>
+            <td class="muted asset-cell" title="Liberty Media Corporation - Series C Liberty Brave">
+              Liberty Media Corporation - Series …
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$250,001 - $500,000</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-07-25</td>
+            <td><strong class="ticker">LINE</strong></td>
+            <td class="muted asset-cell" title="Lineage, Inc. - Common Stock">
+              Lineage, Inc. - Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="red">41d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-06-03</td>
+            <td><strong class="ticker">FWONK</strong></td>
+            <td class="muted asset-cell" title="Liberty Media Formula One Sr C">
+              Liberty Media Formula One Sr C
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="green">6d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-20</td>
+            <td><strong class="ticker">FWONK</strong></td>
+            <td class="muted asset-cell" title="Liberty Media Formula One Sr C">
+              Liberty Media Formula One Sr C
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$250,001 - $500,000</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-03-12</td>
+            <td><strong class="ticker">FWONK</strong></td>
+            <td class="muted asset-cell" title="Formula One Group - The Liberty Media Group">
+              Formula One Group - The Liberty Med…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="yellow">30d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-03-12</td>
+            <td><strong class="ticker">LSXMK</strong></td>
+            <td class="muted asset-cell" title="Liberty Media Corporation - Series C Liberty Siriu">
+              Liberty Media Corporation - Series …
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="yellow">29d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-09</td>
+            <td><strong class="ticker">SDZNY</strong></td>
+            <td class="muted asset-cell" title="SANDOZ GROUP AG">
+              SANDOZ GROUP AG
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">492d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-13</td>
+            <td><strong class="ticker">CMG</strong></td>
+            <td class="muted asset-cell" title="Chipotle Mexican Grill">
+              Chipotle Mexican Grill
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-06-09</td>
+            <td><strong class="ticker">SIRI</strong></td>
+            <td class="muted asset-cell" title="Sirius XM Holdings Inc. - Common Stock">
+              Sirius XM Holdings Inc. - Common St…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="green">5d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-26</td>
+            <td><strong class="ticker">CMG</strong></td>
+            <td class="muted asset-cell" title="Chipotle Mexican Grill, Inc. Common Stock">
+              Chipotle Mexican Grill, Inc. Common…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="green">19d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-10</td>
+            <td><strong class="ticker">INTC</strong></td>
+            <td class="muted asset-cell" title="Intel Corporation - Common Stock">
+              Intel Corporation - Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="red">35d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-10</td>
+            <td><strong class="ticker">VZ</strong></td>
+            <td class="muted asset-cell" title="Verizon Communications Inc. Common Stock">
+              Verizon Communications Inc. Common …
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="red">35d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-10</td>
+            <td><strong class="ticker">AMT</strong></td>
+            <td class="muted asset-cell" title="American Tower Corporation (REIT) Common Stock">
+              American Tower Corporation (REIT) C…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="red">35d</span>
+              
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>Data: Official House Clerk PTR disclosures | InsiderFinance | Quiver Quantitative</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thomas R. Carper | Congress Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo">
+      <span class="logo-icon">C</span>
+      <span class="logo-text">Congress<span class="logo-accent">Tracker</span></span>
+    </a>
+    <a href="/?tab=politicians" class="back-link">&#8592; All Members</a>
+  </div>
+</nav>
+
+<main class="container politician-page">
+
+  <!-- ─── PROFILE HEADER ─── -->
+  <div class="profile-header-v2">
+
+    <!-- Left: photo + status -->
+    <div class="profile-left">
+      <div class="profile-photo-circle rep-border">
+        
+        <div class="profile-photo-fallback-circ">T</div>
+        
+      </div>
+      <div class="profile-status-pill">
+        <span class="status-dot"></span>
+        Active
+      </div>
+      
+    </div>
+
+    <!-- Right: info -->
+    <div class="profile-right">
+      <div class="profile-name-row">
+        <h1 class="profile-name">Thomas R. Carper</h1>
+        <span class="party-badge-lg rep">
+          Republican
+        </span>
+      </div>
+
+      <div class="profile-meta-row">
+        <span class="profile-meta-item">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Senate
+        </span>
+        
+      </div>
+
+      <!-- Stats strip -->
+      <div class="profile-stats-strip">
+        <div class="pstat">
+          <span class="pstat-val">98</span>
+          <span class="pstat-label">Total Trades</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val">$189,098</span>
+          <span class="pstat-label">Total Volume</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val green">50</span>
+          <span class="pstat-label">Buys</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val red">48</span>
+          <span class="pstat-label">Sells</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val">2024-12-13</span>
+          <span class="pstat-label">Last Trade</span>
+        </div>
+        
+        
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val green">18.2d</span>
+          <span class="pstat-label">Avg Delay</span>
+        </div>
+        
+      </div>
+
+      <!-- Top tickers -->
+      
+      <div class="profile-tickers-row">
+        <span class="tickers-label">Most traded:</span>
+        
+        <span class="ticker-pill lg">PSQ <small>×4</small></span>
+        
+        <span class="ticker-pill lg">SBUX <small>×3</small></span>
+        
+        <span class="ticker-pill lg">VLO <small>×3</small></span>
+        
+        <span class="ticker-pill lg">HDGE <small>×3</small></span>
+        
+        <span class="ticker-pill lg">FDRR <small>×2</small></span>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- ─── TRADE HISTORY TABLE ─── -->
+  <div class="trades-section">
+    <div class="trades-section-header">
+      <h2>Trade History <span class="trades-count">98</span></h2>
+      
+      <div class="profile-type-summary">
+        <span class="type-badge buy">50 BUY</span>
+        <span class="type-badge sell">48 SELL</span>
+        <span class="buy-pct-pill">51% buy ratio</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="trades-table-wrap" style="max-height: 700px">
+      <table class="trades-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Ticker</th>
+            <th>Asset</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Filing Delay</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td class="muted">2024-12-13</td>
+            <td><strong class="ticker">AY</strong></td>
+            <td class="muted asset-cell" title="Atlantica Yield Plc">
+              Atlantica Yield Plc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">19d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-22</td>
+            <td><strong class="ticker">TGT</strong></td>
+            <td class="muted asset-cell" title="Target Corp">
+              Target Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">11d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-16</td>
+            <td><strong class="ticker">FDRR</strong></td>
+            <td class="muted asset-cell" title="Fidelity Dividend ETF For Rising Rates">
+              Fidelity Dividend ETF For Rising Ra…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-16</td>
+            <td><strong class="ticker">PRF</strong></td>
+            <td class="muted asset-cell" title="Invesco FTSE RAFI US 1000 ETF">
+              Invesco FTSE RAFI US 1000 ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-16</td>
+            <td><strong class="ticker">VEA</strong></td>
+            <td class="muted asset-cell" title="Vanguard FTSE Developed Markets ETF">
+              Vanguard FTSE Developed Markets ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-16</td>
+            <td><strong class="ticker">VIG</strong></td>
+            <td class="muted asset-cell" title="Vanguard Div Appreciation ETF">
+              Vanguard Div Appreciation ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-16</td>
+            <td><strong class="ticker">ICOW</strong></td>
+            <td class="muted asset-cell" title="Pacer Developed Markets International Cash">
+              Pacer Developed Markets Internation…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-16</td>
+            <td><strong class="ticker">COWZ</strong></td>
+            <td class="muted asset-cell" title="Pacer US Cash Cows 100 Index">
+              Pacer US Cash Cows 100 Index
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-16</td>
+            <td><strong class="ticker">EFAD</strong></td>
+            <td class="muted asset-cell" title="Proshares MSCI EAFE Dividend Growers ETF">
+              Proshares MSCI EAFE Dividend Grower…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-15</td>
+            <td><strong class="ticker">SMDV</strong></td>
+            <td class="muted asset-cell" title="ProShares Russell 2000 Dividend Growers ETF">
+              ProShares Russell 2000 Dividend Gro…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">18d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-15</td>
+            <td><strong class="ticker">CALF</strong></td>
+            <td class="muted asset-cell" title="Pacer US Small Cap Cash Cows 100 ETF">
+              Pacer US Small Cap Cash Cows 100 ET…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">18d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-14</td>
+            <td><strong class="ticker">SRVR</strong></td>
+            <td class="muted asset-cell" title="Pacer Benchmark Data &amp; Infrastructure Real Estate">
+              Pacer Benchmark Data &amp; Infrastructu…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">19d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-14</td>
+            <td><strong class="ticker">MOO</strong></td>
+            <td class="muted asset-cell" title="VanEck Agribusiness ETF">
+              VanEck Agribusiness ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">19d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-09</td>
+            <td><strong class="ticker">EMR</strong></td>
+            <td class="muted asset-cell" title="Emerson Electric Company">
+              Emerson Electric Company
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-09</td>
+            <td><strong class="ticker">ATKR</strong></td>
+            <td class="muted asset-cell" title="Atkore Inc">
+              Atkore Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-09</td>
+            <td><strong class="ticker">TTE</strong></td>
+            <td class="muted asset-cell" title="TotalEnergies SE">
+              TotalEnergies SE
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-09</td>
+            <td><strong class="ticker">OXY</strong></td>
+            <td class="muted asset-cell" title="Occidental Petroleum Corp">
+              Occidental Petroleum Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-05-09</td>
+            <td><strong class="ticker">SBUX</strong></td>
+            <td class="muted asset-cell" title="Starbucks Corp">
+              Starbucks Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-04-11</td>
+            <td><strong class="ticker">ENB</strong></td>
+            <td class="muted asset-cell" title="Enbridge Inc">
+              Enbridge Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">18d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-04-11</td>
+            <td><strong class="ticker">VLO</strong></td>
+            <td class="muted asset-cell" title="Valero Energy Corp">
+              Valero Energy Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">18d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-03-28</td>
+            <td><strong class="ticker">MOS</strong></td>
+            <td class="muted asset-cell" title="Mosaic Company">
+              Mosaic Company
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-03-28</td>
+            <td><strong class="ticker">NTR</strong></td>
+            <td class="muted asset-cell" title="Nutrien Ltd">
+              Nutrien Ltd
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-03-28</td>
+            <td><strong class="ticker">D</strong></td>
+            <td class="muted asset-cell" title="Dominion Energy Inc">
+              Dominion Energy Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-03-21</td>
+            <td><strong class="ticker">ALTM</strong></td>
+            <td class="muted asset-cell" title="Arcadium Lithium Plc">
+              Arcadium Lithium Plc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">7d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-03-21</td>
+            <td><strong class="ticker">LTHM</strong></td>
+            <td class="muted asset-cell" title="Livent Corp">
+              Livent Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">8d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-03-21</td>
+            <td><strong class="ticker">INOD</strong></td>
+            <td class="muted asset-cell" title="Innodata Inc">
+              Innodata Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">7d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-03-21</td>
+            <td><strong class="ticker">SOFI</strong></td>
+            <td class="muted asset-cell" title="Sofi Technologies Inc">
+              Sofi Technologies Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">7d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-03-13</td>
+            <td><strong class="ticker">GLD</strong></td>
+            <td class="muted asset-cell" title="SPDR Gold Trust">
+              SPDR Gold Trust
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-03-13</td>
+            <td><strong class="ticker">CEF</strong></td>
+            <td class="muted asset-cell" title="Sprott Physical Gold &amp; Silver Trust">
+              Sprott Physical Gold &amp; Silver Trust
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-03-13</td>
+            <td><strong class="ticker">SQM</strong></td>
+            <td class="muted asset-cell" title="Sociedad Quimica Y Minera S.A. ADR">
+              Sociedad Quimica Y Minera S.A. ADR
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-03-11</td>
+            <td><strong class="ticker">ETRN</strong></td>
+            <td class="muted asset-cell" title="Equitrans Midstream Corp">
+              Equitrans Midstream Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-03-07</td>
+            <td><strong class="ticker">AAPL</strong></td>
+            <td class="muted asset-cell" title="Apple Inc">
+              Apple Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-03-07</td>
+            <td><strong class="ticker">NVDA</strong></td>
+            <td class="muted asset-cell" title="Nvidia Corp">
+              Nvidia Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-03-05</td>
+            <td><strong class="ticker">ICLN</strong></td>
+            <td class="muted asset-cell" title="Global Clean Energy Ishares ETF">
+              Global Clean Energy Ishares ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="yellow">23d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-02-16</td>
+            <td><strong class="ticker">TGT</strong></td>
+            <td class="muted asset-cell" title="Target Corp">
+              Target Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">16d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-02-16</td>
+            <td><strong class="ticker">EQNR</strong></td>
+            <td class="muted asset-cell" title="Equinor ASA">
+              Equinor ASA
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">16d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-17</td>
+            <td><strong class="ticker">GBIL</strong></td>
+            <td class="muted asset-cell" title="Goldman Sachs Access Treasury 0-1 Year ETF">
+              Goldman Sachs Access Treasury 0-1 Y…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-17</td>
+            <td><strong class="ticker">SBUX</strong></td>
+            <td class="muted asset-cell" title="Starbucks Corp">
+              Starbucks Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-17</td>
+            <td><strong class="ticker">MET</strong></td>
+            <td class="muted asset-cell" title="Metlife Inc">
+              Metlife Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-17</td>
+            <td><strong class="ticker">VLO</strong></td>
+            <td class="muted asset-cell" title="Valero Energy Corp">
+              Valero Energy Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-17</td>
+            <td><strong class="ticker">AES</strong></td>
+            <td class="muted asset-cell" title="The Aes Corp">
+              The Aes Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-17</td>
+            <td><strong class="ticker">TTE</strong></td>
+            <td class="muted asset-cell" title="TotalEnergies SE">
+              TotalEnergies SE
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-17</td>
+            <td><strong class="ticker">ABT</strong></td>
+            <td class="muted asset-cell" title="Abbott Laboratories">
+              Abbott Laboratories
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-17</td>
+            <td><strong class="ticker">CME</strong></td>
+            <td class="muted asset-cell" title="CME Group Inc">
+              CME Group Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-17</td>
+            <td><strong class="ticker">ETRN</strong></td>
+            <td class="muted asset-cell" title="Equitrans Midstream Corp">
+              Equitrans Midstream Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-02</td>
+            <td><strong class="ticker">DELL</strong></td>
+            <td class="muted asset-cell" title="Dell Technologies Inc">
+              Dell Technologies Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">30d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-01-02</td>
+            <td><strong class="ticker">S</strong></td>
+            <td class="muted asset-cell" title="Sentinelone Inc Cl A">
+              Sentinelone Inc Cl A
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">30d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-18</td>
+            <td><strong class="ticker">XCEM</strong></td>
+            <td class="muted asset-cell" title="Columbia EM Core Ex-China ETF">
+              Columbia EM Core Ex-China ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-18</td>
+            <td><strong class="ticker">SBPYX</strong></td>
+            <td class="muted asset-cell" title="Clearbridge Small Cap Growth Fd Cl I">
+              Clearbridge Small Cap Growth Fd Cl …
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-18</td>
+            <td><strong class="ticker">FDRR</strong></td>
+            <td class="muted asset-cell" title="Fidelity Dividend ETF For Rising Rates">
+              Fidelity Dividend ETF For Rising Ra…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-18</td>
+            <td><strong class="ticker">SMDV</strong></td>
+            <td class="muted asset-cell" title="ProShares Russell 2000 Dividend Growers ETF">
+              ProShares Russell 2000 Dividend Gro…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-14</td>
+            <td><strong class="ticker">HDGE</strong></td>
+            <td class="muted asset-cell" title="Ranger Equity Bear Bear ETF">
+              Ranger Equity Bear Bear ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">19d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-11</td>
+            <td><strong class="ticker">AGX</strong></td>
+            <td class="muted asset-cell" title="Argan Inc">
+              Argan Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-11</td>
+            <td><strong class="ticker">FLNG</strong></td>
+            <td class="muted asset-cell" title="Flex Lng Ltd">
+              Flex Lng Ltd
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-11</td>
+            <td><strong class="ticker">IRM</strong></td>
+            <td class="muted asset-cell" title="Iron Mountain Inc">
+              Iron Mountain Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-11</td>
+            <td><strong class="ticker">SBUX</strong></td>
+            <td class="muted asset-cell" title="Starbucks Corp">
+              Starbucks Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-11</td>
+            <td><strong class="ticker">MOS</strong></td>
+            <td class="muted asset-cell" title="Mosaic Company">
+              Mosaic Company
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-11</td>
+            <td><strong class="ticker">VLO</strong></td>
+            <td class="muted asset-cell" title="Valero Energy Corp">
+              Valero Energy Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-11</td>
+            <td><strong class="ticker">TSM</strong></td>
+            <td class="muted asset-cell" title="Taiwan Semiconductor Manufacturing Company Ltd.">
+              Taiwan Semiconductor Manufacturing …
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-11</td>
+            <td><strong class="ticker">FNF</strong></td>
+            <td class="muted asset-cell" title="Fidelity National Financial">
+              Fidelity National Financial
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-11</td>
+            <td><strong class="ticker">FMC</strong></td>
+            <td class="muted asset-cell" title="FMC Corp">
+              FMC Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-11</td>
+            <td><strong class="ticker">KMB</strong></td>
+            <td class="muted asset-cell" title="Kimberly-Clark Corp">
+              Kimberly-Clark Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-11</td>
+            <td><strong class="ticker">URA</strong></td>
+            <td class="muted asset-cell" title="Global X Uranium ETF">
+              Global X Uranium ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-11</td>
+            <td><strong class="ticker">GLPI</strong></td>
+            <td class="muted asset-cell" title="Gaming and Leisure Properties, Inc. - Common Stock">
+              Gaming and Leisure Properties, Inc.…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-12-11</td>
+            <td><strong class="ticker">DGX</strong></td>
+            <td class="muted asset-cell" title="Quest Diagnostics Inc">
+              Quest Diagnostics Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-20</td>
+            <td><strong class="ticker">HDGE</strong></td>
+            <td class="muted asset-cell" title="Ranger Equity Bear Bear ETF">
+              Ranger Equity Bear Bear ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">12d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-20</td>
+            <td><strong class="ticker">PSQ</strong></td>
+            <td class="muted asset-cell" title="ProShares Short QQQ">
+              ProShares Short QQQ
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">12d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-04</td>
+            <td><strong class="ticker">GPCR</strong></td>
+            <td class="muted asset-cell" title="Structure Therapeutics Inc">
+              Structure Therapeutics Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-10-04</td>
+            <td><strong class="ticker">RVNC</strong></td>
+            <td class="muted asset-cell" title="Revance Therapeutics, Inc. - Common Stock">
+              Revance Therapeutics, Inc. - Common…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-08-29</td>
+            <td><strong class="ticker">NEE</strong></td>
+            <td class="muted asset-cell" title="Nextera Energy">
+              Nextera Energy
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">6d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-08-29</td>
+            <td><strong class="ticker">AQN</strong></td>
+            <td class="muted asset-cell" title="Algonquin Power and Utilities Corp">
+              Algonquin Power and Utilities Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">6d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-08-29</td>
+            <td><strong class="ticker">INOD</strong></td>
+            <td class="muted asset-cell" title="Innodata Inc">
+              Innodata Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">6d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-08-29</td>
+            <td><strong class="ticker">SWKS</strong></td>
+            <td class="muted asset-cell" title="Skyworks Solutions">
+              Skyworks Solutions
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">6d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-08-29</td>
+            <td><strong class="ticker">CRWD</strong></td>
+            <td class="muted asset-cell" title="Crowdstrike Holdings Inc">
+              Crowdstrike Holdings Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">6d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-08-29</td>
+            <td><strong class="ticker">RMD</strong></td>
+            <td class="muted asset-cell" title="Resmed Inc">
+              Resmed Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">6d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-08-25</td>
+            <td><strong class="ticker">NTLA</strong></td>
+            <td class="muted asset-cell" title="Intellia Therapeutics, Inc. - Common Stock">
+              Intellia Therapeutics, Inc. - Commo…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">10d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-08-23</td>
+            <td><strong class="ticker">PSQ</strong></td>
+            <td class="muted asset-cell" title="ProShares Short QQQ">
+              ProShares Short QQQ
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">12d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-08-22</td>
+            <td><strong class="ticker">MPW</strong></td>
+            <td class="muted asset-cell" title="Medical Properties Trust">
+              Medical Properties Trust
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-08-22</td>
+            <td><strong class="ticker">ROK</strong></td>
+            <td class="muted asset-cell" title="Rockwell Automation Inc">
+              Rockwell Automation Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">13d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-08-18</td>
+            <td><strong class="ticker">PSQ</strong></td>
+            <td class="muted asset-cell" title="ProShares Short QQQ">
+              ProShares Short QQQ
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-08-16</td>
+            <td><strong class="ticker">XCEM</strong></td>
+            <td class="muted asset-cell" title="Columbia EM Core Ex-China ETF">
+              Columbia EM Core Ex-China ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">19d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-08-16</td>
+            <td><strong class="ticker">JHEM</strong></td>
+            <td class="muted asset-cell" title="John Hancock Multifactor Emerging Markets ETF">
+              John Hancock Multifactor Emerging M…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">19d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-08-15</td>
+            <td><strong class="ticker">BAH</strong></td>
+            <td class="muted asset-cell" title="Booz Allen Hamilton Holding Corp">
+              Booz Allen Hamilton Holding Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-08-10</td>
+            <td><strong class="ticker">RMBS</strong></td>
+            <td class="muted asset-cell" title="Rambus Inc">
+              Rambus Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">25d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-08-10</td>
+            <td><strong class="ticker">SOFI</strong></td>
+            <td class="muted asset-cell" title="Sofi Technologies Inc">
+              Sofi Technologies Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">25d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-08-04</td>
+            <td><strong class="ticker">FTNT</strong></td>
+            <td class="muted asset-cell" title="Fortinet Inc">
+              Fortinet Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-07-13</td>
+            <td><strong class="ticker">PSQ</strong></td>
+            <td class="muted asset-cell" title="ProShares Short QQQ">
+              ProShares Short QQQ
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">19d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-07-13</td>
+            <td><strong class="ticker">HDGE</strong></td>
+            <td class="muted asset-cell" title="Ranger Equity Bear Bear ETF">
+              Ranger Equity Bear Bear ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="green">19d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-07-10</td>
+            <td><strong class="ticker">FNF</strong></td>
+            <td class="muted asset-cell" title="Fidelity National Financial">
+              Fidelity National Financial
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-07-10</td>
+            <td><strong class="ticker">VZ</strong></td>
+            <td class="muted asset-cell" title="Verizon Communications Inc">
+              Verizon Communications Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-06-20</td>
+            <td><strong class="ticker">TT</strong></td>
+            <td class="muted asset-cell" title="Trane Technologies plc">
+              Trane Technologies plc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">9d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-06-20</td>
+            <td><strong class="ticker">ETN</strong></td>
+            <td class="muted asset-cell" title="Eaton Corporation, PLC Ordinary Shares">
+              Eaton Corporation, PLC Ordinary Sha…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">9d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-25</td>
+            <td><strong class="ticker">NVDA</strong></td>
+            <td class="muted asset-cell" title="NVIDIA Corporation - Common Stock">
+              NVIDIA Corporation - Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">35d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-22</td>
+            <td><strong class="ticker">DIS</strong></td>
+            <td class="muted asset-cell" title="Walt Disney Company (The) Common Stock">
+              Walt Disney Company (The) Common St…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">38d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-22</td>
+            <td><strong class="ticker">KEYS</strong></td>
+            <td class="muted asset-cell" title="Keysight Technologies Inc. Common Stock">
+              Keysight Technologies Inc. Common S…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">38d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-22</td>
+            <td><strong class="ticker">BAH</strong></td>
+            <td class="muted asset-cell" title="Booz Allen Hamilton Holding Corporation Common Sto">
+              Booz Allen Hamilton Holding Corpora…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">38d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-22</td>
+            <td><strong class="ticker">NTLA</strong></td>
+            <td class="muted asset-cell" title="Intellia Therapeutics, Inc. - Common Stock">
+              Intellia Therapeutics, Inc. - Commo…
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">38d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2023-05-09</td>
+            <td><strong class="ticker">PYPL</strong></td>
+            <td class="muted asset-cell" title="PayPal Holdings, Inc. - Common Stock">
+              PayPal Holdings, Inc. - Common Stoc…
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">51d</span>
+              
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>Data: Official House Clerk PTR disclosures | InsiderFinance | Quiver Quantitative</p>
+  </div>
+</footer>
+
+</body>
+</html>

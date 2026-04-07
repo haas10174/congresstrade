@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Valerie Hoyle | Congress Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo">
+      <span class="logo-icon">C</span>
+      <span class="logo-text">Congress<span class="logo-accent">Tracker</span></span>
+    </a>
+    <a href="/?tab=politicians" class="back-link">&#8592; All Members</a>
+  </div>
+</nav>
+
+<main class="container politician-page">
+
+  <!-- ─── PROFILE HEADER ─── -->
+  <div class="profile-header-v2">
+
+    <!-- Left: photo + status -->
+    <div class="profile-left">
+      <div class="profile-photo-circle dem-border">
+        
+        <div class="profile-photo-fallback-circ">V</div>
+        
+      </div>
+      <div class="profile-status-pill">
+        <span class="status-dot"></span>
+        Active
+      </div>
+      
+    </div>
+
+    <!-- Right: info -->
+    <div class="profile-right">
+      <div class="profile-name-row">
+        <h1 class="profile-name">Valerie Hoyle</h1>
+        <span class="party-badge-lg dem">
+          Democrat
+        </span>
+      </div>
+
+      <div class="profile-meta-row">
+        <span class="profile-meta-item">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          House
+        </span>
+        
+        <span class="profile-meta-item">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          OR – District 4
+        </span>
+        
+      </div>
+
+      <!-- Stats strip -->
+      <div class="profile-stats-strip">
+        <div class="pstat">
+          <span class="pstat-val">94</span>
+          <span class="pstat-label">Total Trades</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val">$93,093</span>
+          <span class="pstat-label">Total Volume</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val green">41</span>
+          <span class="pstat-label">Buys</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val red">53</span>
+          <span class="pstat-label">Sells</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val">2025-09-23</span>
+          <span class="pstat-label">Last Trade</span>
+        </div>
+        
+        
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val red">130.7d</span>
+          <span class="pstat-label">Avg Delay</span>
+        </div>
+        
+      </div>
+
+      <!-- Top tickers -->
+      
+      <div class="profile-tickers-row">
+        <span class="tickers-label">Most traded:</span>
+        
+        <span class="ticker-pill lg">AAPL <small>×3</small></span>
+        
+        <span class="ticker-pill lg">NFLX <small>×3</small></span>
+        
+        <span class="ticker-pill lg">KKR <small>×3</small></span>
+        
+        <span class="ticker-pill lg">PG <small>×3</small></span>
+        
+        <span class="ticker-pill lg">SHW <small>×3</small></span>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- ─── TRADE HISTORY TABLE ─── -->
+  <div class="trades-section">
+    <div class="trades-section-header">
+      <h2>Trade History <span class="trades-count">94</span></h2>
+      
+      <div class="profile-type-summary">
+        <span class="type-badge buy">41 BUY</span>
+        <span class="type-badge sell">53 SELL</span>
+        <span class="buy-pct-pill">44% buy ratio</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="trades-table-wrap" style="max-height: 700px">
+      <table class="trades-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Ticker</th>
+            <th>Asset</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Filing Delay</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">WSO</strong></td>
+            <td class="muted asset-cell" title="Watsco, Inc. Common Stock">
+              Watsco, Inc. Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">DEO</strong></td>
+            <td class="muted asset-cell" title="Diageo plc Common Stock">
+              Diageo plc Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">MS</strong></td>
+            <td class="muted asset-cell" title="Morgan Stanley Common Stock">
+              Morgan Stanley Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">LIN</strong></td>
+            <td class="muted asset-cell" title="Linde plc - Ordinary Shares">
+              Linde plc - Ordinary Shares
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">KR</strong></td>
+            <td class="muted asset-cell" title="Kroger Company">
+              Kroger Company
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">KKR</strong></td>
+            <td class="muted asset-cell" title="KKR &amp; Co. Inc. Common Stock">
+              KKR &amp; Co. Inc. Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">KDP</strong></td>
+            <td class="muted asset-cell" title="Keurig Dr Pepper Inc.">
+              Keurig Dr Pepper Inc.
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">KVUE</strong></td>
+            <td class="muted asset-cell" title="Kenvue Inc. Common Stock">
+              Kenvue Inc. Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">GE</strong></td>
+            <td class="muted asset-cell" title="GE Aerospace Common Stock">
+              GE Aerospace Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">ES</strong></td>
+            <td class="muted asset-cell" title="Eversource Energy">
+              Eversource Energy
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">CSX</strong></td>
+            <td class="muted asset-cell" title="CSX Corporation">
+              CSX Corporation
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">AAPL</strong></td>
+            <td class="muted asset-cell" title="Apple Inc. - Common Stock">
+              Apple Inc. - Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$15,001 -</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">CCK</strong></td>
+            <td class="muted asset-cell" title="Crown Holdings, Inc.">
+              Crown Holdings, Inc.
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">CRH</strong></td>
+            <td class="muted asset-cell" title="CRH PLC Ordinary Shares">
+              CRH PLC Ordinary Shares
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">COP</strong></td>
+            <td class="muted asset-cell" title="ConocoPhillips Common Stock">
+              ConocoPhillips Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">KO</strong></td>
+            <td class="muted asset-cell" title="Coca-Cola Company">
+              Coca-Cola Company
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">SCHW</strong></td>
+            <td class="muted asset-cell" title="Charles Schwab Corporation">
+              Charles Schwab Corporation
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">CLS</strong></td>
+            <td class="muted asset-cell" title="Celestica, Inc. Common Stock">
+              Celestica, Inc. Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">BA</strong></td>
+            <td class="muted asset-cell" title="Boeing Company">
+              Boeing Company
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">BLK</strong></td>
+            <td class="muted asset-cell" title="BlackRock, Inc. Common Stock">
+              BlackRock, Inc. Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">MOS</strong></td>
+            <td class="muted asset-cell" title="Mosaic Company">
+              Mosaic Company
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">NFLX</strong></td>
+            <td class="muted asset-cell" title="Netflix, Inc. - Common Stock">
+              Netflix, Inc. - Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">NEM</strong></td>
+            <td class="muted asset-cell" title="Newmont Corporation">
+              Newmont Corporation
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">NKE</strong></td>
+            <td class="muted asset-cell" title="Nike, Inc. Common Stock">
+              Nike, Inc. Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">DIS</strong></td>
+            <td class="muted asset-cell" title="Walt Disney Company">
+              Walt Disney Company
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">V</strong></td>
+            <td class="muted asset-cell" title="Visa Inc.">
+              Visa Inc.
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">UCBJY</strong></td>
+            <td class="muted asset-cell" title="UCB SA UNSP/ADR">
+              UCB SA UNSP/ADR
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">USB</strong></td>
+            <td class="muted asset-cell" title="U.S. Bancorp Common Stock">
+              U.S. Bancorp Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">TT</strong></td>
+            <td class="muted asset-cell" title="Trane Technologies plc">
+              Trane Technologies plc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">CI</strong></td>
+            <td class="muted asset-cell" title="The Cigna Group Common Stock">
+              The Cigna Group Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">TSLA</strong></td>
+            <td class="muted asset-cell" title="Tesla, Inc. - Common Stock">
+              Tesla, Inc. - Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">SO</strong></td>
+            <td class="muted asset-cell" title="Southern Company">
+              Southern Company
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">SHW</strong></td>
+            <td class="muted asset-cell" title="Sherwin-Williams Company">
+              Sherwin-Williams Company
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">SN</strong></td>
+            <td class="muted asset-cell" title="SharkNinja, Inc. Ordinary Shares">
+              SharkNinja, Inc. Ordinary Shares
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">SAP</strong></td>
+            <td class="muted asset-cell" title="SAP SE ADS">
+              SAP SE ADS
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">CRM</strong></td>
+            <td class="muted asset-cell" title="Salesforce, Inc. Common Stock">
+              Salesforce, Inc. Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">PGR</strong></td>
+            <td class="muted asset-cell" title="Progressive Corporation">
+              Progressive Corporation
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">PG</strong></td>
+            <td class="muted asset-cell" title="Procter &amp; Gamble Company">
+              Procter &amp; Gamble Company
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">PNR</strong></td>
+            <td class="muted asset-cell" title="Pentair plc. Ordinary Share">
+              Pentair plc. Ordinary Share
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">NTR</strong></td>
+            <td class="muted asset-cell" title="Nutrien Ltd. Common Shares">
+              Nutrien Ltd. Common Shares
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-09-23</td>
+            <td><strong class="ticker">AZO</strong></td>
+            <td class="muted asset-cell" title="AutoZone, Inc. Common Stock">
+              AutoZone, Inc. Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="green">0d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-08-19</td>
+            <td><strong class="ticker">PANW</strong></td>
+            <td class="muted asset-cell" title="Palo Alto Networks, Inc.">
+              Palo Alto Networks, Inc.
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">23d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-08-19</td>
+            <td><strong class="ticker">CPRT</strong></td>
+            <td class="muted asset-cell" title="Copart, Inc. - Common Stock">
+              Copart, Inc. - Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">23d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-07-28</td>
+            <td><strong class="ticker">MMM</strong></td>
+            <td class="muted asset-cell" title="3M Company Common Stock">
+              3M Company Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">45d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-07-28</td>
+            <td><strong class="ticker">GS</strong></td>
+            <td class="muted asset-cell" title="Goldman Sachs Group, Inc.">
+              Goldman Sachs Group, Inc.
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">45d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-07-28</td>
+            <td><strong class="ticker">KR</strong></td>
+            <td class="muted asset-cell" title="Kroger Company">
+              Kroger Company
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">45d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-07-14</td>
+            <td><strong class="ticker">SHW</strong></td>
+            <td class="muted asset-cell" title="Sherwin-Williams Company">
+              Sherwin-Williams Company
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">59d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-07-02</td>
+            <td><strong class="ticker">PG</strong></td>
+            <td class="muted asset-cell" title="Procter &amp; Gamble Company">
+              Procter &amp; Gamble Company
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">71d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-06-26</td>
+            <td><strong class="ticker">SRE</strong></td>
+            <td class="muted asset-cell" title="DBA Sempra Common Stock">
+              DBA Sempra Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">77d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-06-26</td>
+            <td><strong class="ticker">IT</strong></td>
+            <td class="muted asset-cell" title="Gartner, Inc. Common Stock">
+              Gartner, Inc. Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">77d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-06-26</td>
+            <td><strong class="ticker">CRM</strong></td>
+            <td class="muted asset-cell" title="Salesforce, Inc. Common Stock">
+              Salesforce, Inc. Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">77d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-06-06</td>
+            <td><strong class="ticker">PGR</strong></td>
+            <td class="muted asset-cell" title="Progressive Corporation">
+              Progressive Corporation
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">97d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-06-06</td>
+            <td><strong class="ticker">BX</strong></td>
+            <td class="muted asset-cell" title="Blackstone Inc. Common Stock">
+              Blackstone Inc. Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">97d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-06-06</td>
+            <td><strong class="ticker">VMC</strong></td>
+            <td class="muted asset-cell" title="Vulcan Materials Company">
+              Vulcan Materials Company
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">97d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-06-06</td>
+            <td><strong class="ticker">AAPL</strong></td>
+            <td class="muted asset-cell" title="Apple Inc. - Common Stock">
+              Apple Inc. - Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">97d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-29</td>
+            <td><strong class="ticker">COP</strong></td>
+            <td class="muted asset-cell" title="ConocoPhillips Common Stock">
+              ConocoPhillips Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">135d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-15</td>
+            <td><strong class="ticker">BX</strong></td>
+            <td class="muted asset-cell" title="Blackstone Inc. Common Stock">
+              Blackstone Inc. Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">149d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-02</td>
+            <td><strong class="ticker">KKR</strong></td>
+            <td class="muted asset-cell" title="KKR &amp; Co. Inc. Common Stock">
+              KKR &amp; Co. Inc. Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">162d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-13</td>
+            <td><strong class="ticker">PANW</strong></td>
+            <td class="muted asset-cell" title="Palo Alto Networks, Inc.">
+              Palo Alto Networks, Inc.
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">182d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-02-04</td>
+            <td><strong class="ticker">INTU</strong></td>
+            <td class="muted asset-cell" title="Intuit Inc. - Common Stock">
+              Intuit Inc. - Common Stock
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">219d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-02-04</td>
+            <td><strong class="ticker">NFLX</strong></td>
+            <td class="muted asset-cell" title="Netflix, Inc. - Common Stock">
+              Netflix, Inc. - Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">219d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-24</td>
+            <td><strong class="ticker">AME</strong></td>
+            <td class="muted asset-cell" title="AMETEK, Inc.">
+              AMETEK, Inc.
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">230d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-24</td>
+            <td><strong class="ticker">MS</strong></td>
+            <td class="muted asset-cell" title="Morgan Stanley Common Stock">
+              Morgan Stanley Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">230d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">DEO</strong></td>
+            <td class="muted asset-cell" title="Diageo plc Common Stock">
+              Diageo plc Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">IT</strong></td>
+            <td class="muted asset-cell" title="Gartner, Inc. Common Stock">
+              Gartner, Inc. Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">SRE</strong></td>
+            <td class="muted asset-cell" title="DBA Sempra Common Stock">
+              DBA Sempra Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">SO</strong></td>
+            <td class="muted asset-cell" title="Southern Company">
+              Southern Company
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">CCK</strong></td>
+            <td class="muted asset-cell" title="Crown Holdings, Inc.">
+              Crown Holdings, Inc.
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">CPRT</strong></td>
+            <td class="muted asset-cell" title="Copart, Inc. - Common Stock">
+              Copart, Inc. - Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">KO</strong></td>
+            <td class="muted asset-cell" title="Coca-Cola Company">
+              Coca-Cola Company
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">BLK</strong></td>
+            <td class="muted asset-cell" title="BlackRock, Inc. Common Stock">
+              BlackRock, Inc. Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">AZO</strong></td>
+            <td class="muted asset-cell" title="AutoZone, Inc. Common Stock">
+              AutoZone, Inc. Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">AAPL</strong></td>
+            <td class="muted asset-cell" title="Apple Inc. - Common Stock">
+              Apple Inc. - Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">AME</strong></td>
+            <td class="muted asset-cell" title="AMETEK, Inc.">
+              AMETEK, Inc.
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">BA</strong></td>
+            <td class="muted asset-cell" title="Boeing Company">
+              Boeing Company
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">KKR</strong></td>
+            <td class="muted asset-cell" title="KKR &amp; Co. Inc. Common Stock">
+              KKR &amp; Co. Inc. Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">GE</strong></td>
+            <td class="muted asset-cell" title="GE Aerospace Common Stock">
+              GE Aerospace Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">INTU</strong></td>
+            <td class="muted asset-cell" title="Intuit Inc. - Common Stock">
+              Intuit Inc. - Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">TT</strong></td>
+            <td class="muted asset-cell" title="Trane Technologies plc">
+              Trane Technologies plc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">V</strong></td>
+            <td class="muted asset-cell" title="Visa Inc.">
+              Visa Inc.
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">VMC</strong></td>
+            <td class="muted asset-cell" title="Vulcan Materials Company">
+              Vulcan Materials Company
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">DIS</strong></td>
+            <td class="muted asset-cell" title="Walt Disney Company">
+              Walt Disney Company
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">WSO</strong></td>
+            <td class="muted asset-cell" title="Watsco, Inc. Common Stock">
+              Watsco, Inc. Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">SHW</strong></td>
+            <td class="muted asset-cell" title="Sherwin-Williams Company">
+              Sherwin-Williams Company
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">SAP</strong></td>
+            <td class="muted asset-cell" title="SAP SE ADS">
+              SAP SE ADS
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">PG</strong></td>
+            <td class="muted asset-cell" title="Procter &amp; Gamble Company">
+              Procter &amp; Gamble Company
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">PNR</strong></td>
+            <td class="muted asset-cell" title="Pentair plc. Ordinary Share">
+              Pentair plc. Ordinary Share
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">NTR</strong></td>
+            <td class="muted asset-cell" title="Nutrien Ltd. Common Shares">
+              Nutrien Ltd. Common Shares
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">NFLX</strong></td>
+            <td class="muted asset-cell" title="Netflix, Inc. - Common Stock">
+              Netflix, Inc. - Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">LIN</strong></td>
+            <td class="muted asset-cell" title="Linde plc - Ordinary Shares">
+              Linde plc - Ordinary Shares
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">CI</strong></td>
+            <td class="muted asset-cell" title="The Cigna Group Common Stock">
+              The Cigna Group Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">KDP</strong></td>
+            <td class="muted asset-cell" title="Keurig Dr Pepper Inc.">
+              Keurig Dr Pepper Inc.
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">KVUE</strong></td>
+            <td class="muted asset-cell" title="Kenvue Inc. Common Stock">
+              Kenvue Inc. Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2024-10-29</td>
+            <td><strong class="ticker">USB</strong></td>
+            <td class="muted asset-cell" title="U.S. Bancorp Common Stock">
+              U.S. Bancorp Common Stock
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="red">317d</span>
+              
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>Data: Official House Clerk PTR disclosures | InsiderFinance | Quiver Quantitative</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dave McCormick | Congress Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="logo">
+      <span class="logo-icon">C</span>
+      <span class="logo-text">Congress<span class="logo-accent">Tracker</span></span>
+    </a>
+    <a href="/?tab=politicians" class="back-link">&#8592; All Members</a>
+  </div>
+</nav>
+
+<main class="container politician-page">
+
+  <!-- ─── PROFILE HEADER ─── -->
+  <div class="profile-header-v2">
+
+    <!-- Left: photo + status -->
+    <div class="profile-left">
+      <div class="profile-photo-circle rep-border">
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/McCormick_Portrait_%28HR%29.jpg/250px-McCormick_Portrait_%28HR%29.jpg" alt="Dave McCormick" class="profile-photo-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <div class="profile-photo-fallback-circ" style="display:none">D</div>
+        
+      </div>
+      <div class="profile-status-pill">
+        <span class="status-dot"></span>
+        Active
+      </div>
+      
+    </div>
+
+    <!-- Right: info -->
+    <div class="profile-right">
+      <div class="profile-name-row">
+        <h1 class="profile-name">Dave McCormick</h1>
+        <span class="party-badge-lg rep">
+          Republican
+        </span>
+      </div>
+
+      <div class="profile-meta-row">
+        <span class="profile-meta-item">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Senate
+        </span>
+        
+        <span class="profile-meta-item">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          PA
+        </span>
+        
+      </div>
+
+      <!-- Stats strip -->
+      <div class="profile-stats-strip">
+        <div class="pstat">
+          <span class="pstat-val">42</span>
+          <span class="pstat-label">Total Trades</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val">$6,931,042</span>
+          <span class="pstat-label">Total Volume</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val green">35</span>
+          <span class="pstat-label">Buys</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val red">7</span>
+          <span class="pstat-label">Sells</span>
+        </div>
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val">2026-03-10</span>
+          <span class="pstat-label">Last Trade</span>
+        </div>
+        
+        
+        <div class="pstat-divider"></div>
+        <div class="pstat">
+          <span class="pstat-val yellow">23.4d</span>
+          <span class="pstat-label">Avg Delay</span>
+        </div>
+        
+      </div>
+
+      <!-- Top tickers -->
+      
+      <div class="profile-tickers-row">
+        <span class="tickers-label">Most traded:</span>
+        
+        <span class="ticker-pill lg">BITB <small>×22</small></span>
+        
+        <span class="ticker-pill lg">GS <small>×7</small></span>
+        
+        <span class="ticker-pill lg">DAL <small>×1</small></span>
+        
+        <span class="ticker-pill lg">IJR <small>×1</small></span>
+        
+        <span class="ticker-pill lg">ORCL <small>×1</small></span>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- ─── TRADE HISTORY TABLE ─── -->
+  <div class="trades-section">
+    <div class="trades-section-header">
+      <h2>Trade History <span class="trades-count">42</span></h2>
+      
+      <div class="profile-type-summary">
+        <span class="type-badge buy">35 BUY</span>
+        <span class="type-badge sell">7 SELL</span>
+        <span class="buy-pct-pill">83% buy ratio</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="trades-table-wrap" style="max-height: 700px">
+      <table class="trades-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Ticker</th>
+            <th>Asset</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Filing Delay</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td class="muted">2026-03-10</td>
+            <td><strong class="ticker">GS</strong></td>
+            <td class="muted asset-cell" title="The Goldman Sachs Group Inc">
+              The Goldman Sachs Group Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="green">15d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-03-03</td>
+            <td><strong class="ticker">GS</strong></td>
+            <td class="muted asset-cell" title="The Goldman Sachs Group Inc">
+              The Goldman Sachs Group Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-02-25</td>
+            <td><strong class="ticker">GS</strong></td>
+            <td class="muted asset-cell" title="The Goldman Sachs Group Inc (1)">
+              The Goldman Sachs Group Inc (1)
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-02-24</td>
+            <td><strong class="ticker">GS</strong></td>
+            <td class="muted asset-cell" title="The Goldman Sachs Group Inc">
+              The Goldman Sachs Group Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="yellow">29d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-02-23</td>
+            <td><strong class="ticker">GS</strong></td>
+            <td class="muted asset-cell" title="The Goldman Sachs Group Inc (2)">
+              The Goldman Sachs Group Inc (2)
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$100,001 - $250,000</td>
+            <td>
+              
+              <span class="yellow">30d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2026-01-23</td>
+            <td><strong class="ticker">GS</strong></td>
+            <td class="muted asset-cell" title="The Goldman Sachs Group Inc">
+              The Goldman Sachs Group Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,000,001 - $5,000,000</td>
+            <td>
+              
+              <span class="yellow">30d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-11-28</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-11-26</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="yellow">30d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-11-25</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="green">2d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-11-24</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="green">3d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-07-30</td>
+            <td><strong class="ticker">DAL</strong></td>
+            <td class="muted asset-cell" title="Delta Air Lines Inc">
+              Delta Air Lines Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$250,001 - $500,000</td>
+            <td>
+              
+              <span class="green">2d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-05-06</td>
+            <td><strong class="ticker">IJR</strong></td>
+            <td class="muted asset-cell" title="iShares Core S&amp;P Small-Cap ETF">
+              iShares Core S&amp;P Small-Cap ETF
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,001 - $15,000</td>
+            <td>
+              
+              <span class="yellow">29d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-09</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-07</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="yellow">23d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-03</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-02</td>
+            <td><strong class="ticker">ORCL</strong></td>
+            <td class="muted asset-cell" title="Oracle Corp">
+              Oracle Corp
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$250,001 - $500,000</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-04-02</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="yellow">28d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-31</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="yellow">30d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-27</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-25</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="yellow">29d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-24</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="yellow">30d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-20</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="green">10d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-13</td>
+            <td><strong class="ticker">GIS</strong></td>
+            <td class="muted asset-cell" title="General Mills Inc">
+              General Mills Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$250,001 - $500,000</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-13</td>
+            <td><strong class="ticker">PARA</strong></td>
+            <td class="muted asset-cell" title="Paramount Global Inc">
+              Paramount Global Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$250,001 - $500,000</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-13</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="green">17d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-11</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="green">19d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-10</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="yellow">20d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-05</td>
+            <td><strong class="ticker">KBH</strong></td>
+            <td class="muted asset-cell" title="KB Home">
+              KB Home
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$250,001 - $500,000</td>
+            <td>
+              
+              <span class="yellow">25d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-05</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="yellow">25d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-03-03</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="yellow">27d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-02-28</td>
+            <td><strong class="ticker">GS</strong></td>
+            <td class="muted asset-cell" title="The Goldman Sachs Group Inc">
+              The Goldman Sachs Group Inc
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,000,001 - $5,000,000</td>
+            <td>
+              
+              <span class="yellow">30d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-02-28</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="yellow">30d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-02-27</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="yellow">31d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-02-26</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$15,001 - $50,000</td>
+            <td>
+              
+              <span class="yellow">21d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-02-25</td>
+            <td><strong class="ticker">BITB</strong></td>
+            <td class="muted asset-cell" title="BITWISE BITCOIN ETF">
+              BITWISE BITCOIN ETF
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$50,001 - $100,000</td>
+            <td>
+              
+              <span class="yellow">22d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-21</td>
+            <td><strong class="ticker">OXY</strong></td>
+            <td class="muted asset-cell" title="Occidental Petroleum Corp">
+              Occidental Petroleum Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$250,001 - $500,000</td>
+            <td>
+              
+              <span class="green">19d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-17</td>
+            <td><strong class="ticker">ARCC</strong></td>
+            <td class="muted asset-cell" title="ARES CAPITAL CORPORATION">
+              ARES CAPITAL CORPORATION
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$250,001 - $500,000</td>
+            <td>
+              
+              <span class="yellow">23d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-16</td>
+            <td><strong class="ticker">RUM</strong></td>
+            <td class="muted asset-cell" title="RUMBLE INC">
+              RUMBLE INC
+            </td>
+            <td><span class="type-badge sell">SELL</span></td>
+            <td class="muted">$1,000,001 - $5,000,000</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-16</td>
+            <td><strong class="ticker">ATH</strong></td>
+            <td class="muted asset-cell" title="Athene Holding Ltd">
+              Athene Holding Ltd
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$250,001 - $500,000</td>
+            <td>
+              
+              <span class="yellow">24d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-10</td>
+            <td><strong class="ticker">MCD</strong></td>
+            <td class="muted asset-cell" title="McDonald&#39;s Corp">
+              McDonald&#39;s Corp
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$250,001 - $500,000</td>
+            <td>
+              
+              <span class="yellow">30d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-10</td>
+            <td><strong class="ticker">PSX</strong></td>
+            <td class="muted asset-cell" title="Phillips 66">
+              Phillips 66
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$250,001 - $500,000</td>
+            <td>
+              
+              <span class="yellow">30d</span>
+              
+            </td>
+          </tr>
+          
+          <tr>
+            <td class="muted">2025-01-10</td>
+            <td><strong class="ticker">CG</strong></td>
+            <td class="muted asset-cell" title="The Carlyle Group Inc">
+              The Carlyle Group Inc
+            </td>
+            <td><span class="type-badge buy">BUY</span></td>
+            <td class="muted">$250,001 - $500,000</td>
+            <td>
+              
+              <span class="yellow">30d</span>
+              
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>Data: Official House Clerk PTR disclosures | InsiderFinance | Quiver Quantitative</p>
+  </div>
+</footer>
+
+</body>
+</html>
